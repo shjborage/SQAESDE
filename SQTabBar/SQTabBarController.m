@@ -8,7 +8,7 @@
 
 #import "SQTabBarController.h"
 #import "SQBadgeView.h"
-#import "Constant.h"
+//#import "Constant.h"
 
 @implementation SQTabBarController
 
@@ -105,8 +105,6 @@ static BOOL g_bFirstTime =YES;
 	_ivBackGroundImageView.frame = CGRectMake(0.0f, 64.0f, 100.0f, 704.0f);//self.tabBar.frame;
 //    [self.view addSubview:_ivBackGroundImageView];
     [_ivBackGroundImageView release];
-    
-	_vCustomTabBarView.backgroundColor = kGrayColor;
 	
 	// 创建按钮
 	int nViewCount = self.viewControllers.count > 5 ? 5 : self.viewControllers.count;
