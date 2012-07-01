@@ -17,7 +17,8 @@
 #  define SQLOG(...) ;
 #  define SQLOGRECT(r) ;
 #endif
-//SQLOG(@"%@%d%@...",__FILE_NAME__,__LINE__,__FUNC_NAME__,...);
+
+//SQLOG(@"file:%@ line:%d fun:%@ ...", __FILE_NAME__, __LINE__, __FUNC_NAME__, ...);
 
 #define __FUNC_NAME__   NSStringFromSelector(_cmd)
 #define __CLASS_NAME__  NSStringFromClass([self class])

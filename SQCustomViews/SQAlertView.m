@@ -8,6 +8,7 @@
 
 #import "SQAlertView.h"
 #import "SQStringUtils.h"
+#import "SQDebugUtils.h"
 
 @implementation SQAlertView
 
@@ -81,6 +82,8 @@ static SQAlertView *g_Instance = nil;
            atDuration:(NSTimeInterval)dDuration
                atMode:(MBProgressHUDMode)mode
 {
+    SQLOG(@"file:%@ line:%d fun:%@ message:%@", __FILE_NAME__, __LINE__, __FUNC_NAME__, strMsg);
+    
     if (HUD != nil && mode == HUD.mode && [HUD.labelText isEqualToString:strMsg]) {
         return;
     }
@@ -91,8 +94,19 @@ static SQAlertView *g_Instance = nil;
         HUD = nil;
     }
     
-    HUD = [[MBProgressHUD alloc] initWithView:[[UIApplication sharedApplication] keyWindow]];
-    [[[UIApplication sharedApplication] keyWindow] addSubview:HUD];
+    if (_windowPrompt == nil)
+        _windowPrompt = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    
+//    HUD = [[MBProgressHUD alloc] initWithView:[[UIApplication sharedApplication] keyWindow]];
+//    [[[UIApplication sharedApplication] keyWindow] addSubview:HUD];
+    
+    HUD = [[MBProgressHUD alloc] initWithView:_windowPrompt];
+    
+    _windowPrompt.windowLevel = UIWindowLevelAlert - 1;
+    _windowPrompt.hidden = NO;
+    _windowPrompt.backgroundColor = [UIColor clearColor];
+    _windowPrompt.userInteractionEnabled = YES;
+    [_windowPrompt addSubview:HUD];
     
     HUD.customView = [[[UIImageView alloc] initWithImage:[UIImage imageNamed:@"37x-Checkmark.png"]] autorelease];
     
@@ -112,7 +126,13 @@ static SQAlertView *g_Instance = nil;
 
 -(void)stopPromptMessage
 {
-    [HUD hide:YES];
+    if (HUD != nil) {
+        [HUD removeFromSuperview];
+        [HUD release];
+        HUD = nil;
+    }
+    
+    _windowPrompt.userInteractionEnabled = NO;
 }
 
 -(void)setDimBackground:(BOOL)bDim
@@ -133,6 +153,8 @@ static SQAlertView *g_Instance = nil;
     [HUD removeFromSuperview];
     [HUD release];
 	HUD = nil;
+    
+    _windowPrompt.userInteractionEnabled = NO;
 }
 
 @end

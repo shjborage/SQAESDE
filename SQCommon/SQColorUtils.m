@@ -31,4 +31,17 @@ static UIColor *gNavigationBarColors[1];
     return [UIColor colorWithRed:0.859 green:0.886 blue:0.929 alpha:1.0];
 }
 
+- (UIImage *)createImage
+{
+    CGRect rect=CGRectMake(0.0f, 0.0f, 1.0f, 1.0f);
+    UIGraphicsBeginImageContext(rect.size);
+    CGContextRef context = UIGraphicsGetCurrentContext();
+    CGContextSetFillColorWithColor(context, [self CGColor]);
+    CGContextFillRect(context, rect);
+    
+    UIImage *theImage = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    return theImage;
+}
+
 @end

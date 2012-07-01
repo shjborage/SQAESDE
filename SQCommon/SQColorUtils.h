@@ -12,7 +12,8 @@
 @interface UIColor (UIColorUtils)
 + (void)initColorScheme;
 
-+ (UIColor*)navigationColor;
-+ (UIColor*)cellLabelColor;
-+ (UIColor*)conversationBackground;
++ (UIColor *)navigationColor;
++ (UIColor *)cellLabelColor;
++ (UIColor *)conversationBackground;
+- (UIImage *)createImage;   // add by shjborage@gmail.com May 28, 2012
 @end

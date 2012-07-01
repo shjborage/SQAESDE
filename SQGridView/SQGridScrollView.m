@@ -88,6 +88,7 @@
         self.delegate = self;
         self.pagingEnabled =  NO;
         
+        self.autoresizesSubviews=YES;
         self.Style = GRIDSCROLL_VERTICAL_STYLE;
     }
     return self;
@@ -116,7 +117,7 @@
     }
     
     if (nil == _visiblePage) {        
-        _visiblePage = [[SQGridView alloc] initWithFrame:CGRectMake(0, 0, self.contentSize.width, self.contentSize.height)];
+        _visiblePage = [[SQGridView alloc] initWithFrame:CGRectMake(0, 0, self.frame.size.width,self.frame.size.height)];//self.contentSize.width, self.contentSize.height)];
         _visiblePage.dataSource = _sdataSource;
         _visiblePage.delegate = _sdelegate;
         _visiblePage.style = _style;

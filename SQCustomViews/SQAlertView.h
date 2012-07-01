@@ -16,6 +16,8 @@
     SEL _action;
     
     MBProgressHUD *HUD;
+    
+    UIWindow *_windowPrompt;
 }
 
 + (id)defaultAlert;
