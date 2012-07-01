@@ -11,8 +11,8 @@
 // 2.AVFoundation.framework
 // 3.AudioToolbox.framework
 
-#ifndef iMagazine_SQLibs_h
-#define iMagazine_SQLibs_h
+#ifndef _SQLibs_h
+#define _SQLibs_h
 
 // SQCommon
 #import "SQColorUtils.h"
