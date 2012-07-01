@@ -6,6 +6,11 @@
 //  Copyright (c) 2012 Safe&Quick[http://blog.sina.com.cn/shjborage]. All rights reserved.
 //
 
+// remember to add System Library below:
+// 1.QuartzCore.framework
+// 2.AVFoundation.framework
+// 3.AudioToolbox.framework
+
 #ifndef iMagazine_SQLibs_h
 #define iMagazine_SQLibs_h
 
