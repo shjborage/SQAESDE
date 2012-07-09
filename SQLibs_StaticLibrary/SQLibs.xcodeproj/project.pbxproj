@@ -1,0 +1,411 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A0D05CA815A6F06800A2491E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0D05CA715A6F06800A2491E /* Foundation.framework */; };
+		A0D05CD615A6F13D00A2491E /* SQColorUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = A0D05CB515A6F13D00A2491E /* SQColorUtils.h */; };
+		A0D05CD715A6F13D00A2491E /* SQColorUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = A0D05CB615A6F13D00A2491E /* SQColorUtils.m */; };
+		A0D05CD815A6F13D00A2491E /* SQDebugUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = A0D05CB715A6F13D00A2491E /* SQDebugUtils.h */; };
+		A0D05CD915A6F13D00A2491E /* SQGlobalMarco.h in Headers */ = {isa = PBXBuildFile; fileRef = A0D05CB815A6F13D00A2491E /* SQGlobalMarco.h */; };
+		A0D05CDA15A6F13D00A2491E /* SQStringUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = A0D05CB915A6F13D00A2491E /* SQStringUtils.h */; };
+		A0D05CDB15A6F13D00A2491E /* SQStringUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = A0D05CBA15A6F13D00A2491E /* SQStringUtils.m */; };
+		A0D05CDC15A6F13D00A2491E /* SQAlertView.h in Headers */ = {isa = PBXBuildFile; fileRef = A0D05CBC15A6F13D00A2491E /* SQAlertView.h */; };
+		A0D05CDD15A6F13D00A2491E /* SQAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = A0D05CBD15A6F13D00A2491E /* SQAlertView.m */; };
+		A0D05CDE15A6F13D00A2491E /* SQLoadingViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = A0D05CBE15A6F13D00A2491E /* SQLoadingViewController.h */; };
+		A0D05CDF15A6F13D00A2491E /* SQLoadingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0D05CBF15A6F13D00A2491E /* SQLoadingViewController.m */; };
+		A0D05CE015A6F13D00A2491E /* SQMaskView.h in Headers */ = {isa = PBXBuildFile; fileRef = A0D05CC015A6F13D00A2491E /* SQMaskView.h */; };
+		A0D05CE115A6F13D00A2491E /* SQMaskView.m in Sources */ = {isa = PBXBuildFile; fileRef = A0D05CC115A6F13D00A2491E /* SQMaskView.m */; };
+		A0D05CE215A6F13D00A2491E /* SQGridCell.h in Headers */ = {isa = PBXBuildFile; fileRef = A0D05CC315A6F13D00A2491E /* SQGridCell.h */; };
+		A0D05CE315A6F13D00A2491E /* SQGridCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A0D05CC415A6F13D00A2491E /* SQGridCell.m */; };
+		A0D05CE415A6F13D00A2491E /* SQGridScrollView.h in Headers */ = {isa = PBXBuildFile; fileRef = A0D05CC515A6F13D00A2491E /* SQGridScrollView.h */; };
+		A0D05CE515A6F13D00A2491E /* SQGridScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = A0D05CC615A6F13D00A2491E /* SQGridScrollView.m */; };
+		A0D05CE615A6F13D00A2491E /* SQGridView.h in Headers */ = {isa = PBXBuildFile; fileRef = A0D05CC715A6F13D00A2491E /* SQGridView.h */; };
+		A0D05CE715A6F13D00A2491E /* SQGridView.m in Sources */ = {isa = PBXBuildFile; fileRef = A0D05CC815A6F13D00A2491E /* SQGridView.m */; };
+		A0D05CE815A6F13D00A2491E /* SQLibs.h in Headers */ = {isa = PBXBuildFile; fileRef = A0D05CC915A6F13D00A2491E /* SQLibs.h */; };
+		A0D05CE915A6F13D00A2491E /* SQSoundManager.h in Headers */ = {isa = PBXBuildFile; fileRef = A0D05CCB15A6F13D00A2491E /* SQSoundManager.h */; };
+		A0D05CEA15A6F13D00A2491E /* SQSoundManager.mm in Sources */ = {isa = PBXBuildFile; fileRef = A0D05CCC15A6F13D00A2491E /* SQSoundManager.mm */; };
+		A0D05CEB15A6F13D00A2491E /* SQBadgeView.h in Headers */ = {isa = PBXBuildFile; fileRef = A0D05CCE15A6F13D00A2491E /* SQBadgeView.h */; };
+		A0D05CEC15A6F13D00A2491E /* SQBadgeView.m in Sources */ = {isa = PBXBuildFile; fileRef = A0D05CCF15A6F13D00A2491E /* SQBadgeView.m */; };
+		A0D05CED15A6F13D00A2491E /* SQTabBarController.h in Headers */ = {isa = PBXBuildFile; fileRef = A0D05CD015A6F13D00A2491E /* SQTabBarController.h */; };
+		A0D05CEE15A6F13D00A2491E /* SQTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0D05CD115A6F13D00A2491E /* SQTabBarController.m */; };
+		A0D05CEF15A6F13D00A2491E /* MBProgressHUD.h in Headers */ = {isa = PBXBuildFile; fileRef = A0D05CD415A6F13D00A2491E /* MBProgressHUD.h */; };
+		A0D05CF015A6F13D00A2491E /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = A0D05CD515A6F13D00A2491E /* MBProgressHUD.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		A03EB1D115AA82FB00BC05A9 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = README.md; path = ../../README.md; sourceTree = "<group>"; };
+		A03EB1D215AA82FB00BC05A9 /* SQLibs.mmap */ = {isa = PBXFileReference; lastKnownFileType = file; name = SQLibs.mmap; path = ../../SQLibs.mmap; sourceTree = "<group>"; };
+		A0D05CA415A6F06800A2491E /* libSQLibs.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libSQLibs.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		A0D05CA715A6F06800A2491E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		A0D05CAB15A6F06800A2491E /* SQLibs-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SQLibs-Prefix.pch"; sourceTree = "<group>"; };
+		A0D05CB515A6F13D00A2491E /* SQColorUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SQColorUtils.h; sourceTree = "<group>"; };
+		A0D05CB615A6F13D00A2491E /* SQColorUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SQColorUtils.m; sourceTree = "<group>"; };
+		A0D05CB715A6F13D00A2491E /* SQDebugUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SQDebugUtils.h; sourceTree = "<group>"; };
+		A0D05CB815A6F13D00A2491E /* SQGlobalMarco.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SQGlobalMarco.h; sourceTree = "<group>"; };
+		A0D05CB915A6F13D00A2491E /* SQStringUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SQStringUtils.h; sourceTree = "<group>"; };
+		A0D05CBA15A6F13D00A2491E /* SQStringUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SQStringUtils.m; sourceTree = "<group>"; };
+		A0D05CBC15A6F13D00A2491E /* SQAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SQAlertView.h; sourceTree = "<group>"; };
+		A0D05CBD15A6F13D00A2491E /* SQAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SQAlertView.m; sourceTree = "<group>"; };
+		A0D05CBE15A6F13D00A2491E /* SQLoadingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SQLoadingViewController.h; sourceTree = "<group>"; };
+		A0D05CBF15A6F13D00A2491E /* SQLoadingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SQLoadingViewController.m; sourceTree = "<group>"; };
+		A0D05CC015A6F13D00A2491E /* SQMaskView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SQMaskView.h; sourceTree = "<group>"; };
+		A0D05CC115A6F13D00A2491E /* SQMaskView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SQMaskView.m; sourceTree = "<group>"; };
+		A0D05CC315A6F13D00A2491E /* SQGridCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SQGridCell.h; sourceTree = "<group>"; };
+		A0D05CC415A6F13D00A2491E /* SQGridCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SQGridCell.m; sourceTree = "<group>"; };
+		A0D05CC515A6F13D00A2491E /* SQGridScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SQGridScrollView.h; sourceTree = "<group>"; };
+		A0D05CC615A6F13D00A2491E /* SQGridScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SQGridScrollView.m; sourceTree = "<group>"; };
+		A0D05CC715A6F13D00A2491E /* SQGridView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SQGridView.h; sourceTree = "<group>"; };
+		A0D05CC815A6F13D00A2491E /* SQGridView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SQGridView.m; sourceTree = "<group>"; };
+		A0D05CC915A6F13D00A2491E /* SQLibs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SQLibs.h; path = ../../SQLibs.h; sourceTree = "<group>"; };
+		A0D05CCB15A6F13D00A2491E /* SQSoundManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SQSoundManager.h; sourceTree = "<group>"; };
+		A0D05CCC15A6F13D00A2491E /* SQSoundManager.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = SQSoundManager.mm; sourceTree = "<group>"; };
+		A0D05CCE15A6F13D00A2491E /* SQBadgeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SQBadgeView.h; sourceTree = "<group>"; };
+		A0D05CCF15A6F13D00A2491E /* SQBadgeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SQBadgeView.m; sourceTree = "<group>"; };
+		A0D05CD015A6F13D00A2491E /* SQTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SQTabBarController.h; sourceTree = "<group>"; };
+		A0D05CD115A6F13D00A2491E /* SQTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SQTabBarController.m; sourceTree = "<group>"; };
+		A0D05CD415A6F13D00A2491E /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		A0D05CD515A6F13D00A2491E /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A0D05CA115A6F06800A2491E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A0D05CA815A6F06800A2491E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A0D05C9915A6F06800A2491E = {
+			isa = PBXGroup;
+			children = (
+				A0D05CA915A6F06800A2491E /* SQLibs */,
+				A0D05CA615A6F06800A2491E /* Frameworks */,
+				A0D05CA515A6F06800A2491E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A0D05CA515A6F06800A2491E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A0D05CA415A6F06800A2491E /* libSQLibs.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A0D05CA615A6F06800A2491E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A0D05CA715A6F06800A2491E /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A0D05CA915A6F06800A2491E /* SQLibs */ = {
+			isa = PBXGroup;
+			children = (
+				A03EB1D115AA82FB00BC05A9 /* README.md */,
+				A03EB1D215AA82FB00BC05A9 /* SQLibs.mmap */,
+				A0D05CC915A6F13D00A2491E /* SQLibs.h */,
+				A0D05CB415A6F13D00A2491E /* SQCommon */,
+				A0D05CBB15A6F13D00A2491E /* SQCustomViews */,
+				A0D05CC215A6F13D00A2491E /* SQGridView */,
+				A0D05CCA15A6F13D00A2491E /* SQMedia */,
+				A0D05CCD15A6F13D00A2491E /* SQTabBar */,
+				A0D05CD215A6F13D00A2491E /* ThirdParties */,
+				A0D05CAA15A6F06800A2491E /* Supporting Files */,
+			);
+			path = SQLibs;
+			sourceTree = "<group>";
+		};
+		A0D05CAA15A6F06800A2491E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A0D05CAB15A6F06800A2491E /* SQLibs-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A0D05CB415A6F13D00A2491E /* SQCommon */ = {
+			isa = PBXGroup;
+			children = (
+				A0D05CB515A6F13D00A2491E /* SQColorUtils.h */,
+				A0D05CB615A6F13D00A2491E /* SQColorUtils.m */,
+				A0D05CB715A6F13D00A2491E /* SQDebugUtils.h */,
+				A0D05CB815A6F13D00A2491E /* SQGlobalMarco.h */,
+				A0D05CB915A6F13D00A2491E /* SQStringUtils.h */,
+				A0D05CBA15A6F13D00A2491E /* SQStringUtils.m */,
+			);
+			name = SQCommon;
+			path = ../../SQCommon;
+			sourceTree = "<group>";
+		};
+		A0D05CBB15A6F13D00A2491E /* SQCustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				A0D05CBC15A6F13D00A2491E /* SQAlertView.h */,
+				A0D05CBD15A6F13D00A2491E /* SQAlertView.m */,
+				A0D05CBE15A6F13D00A2491E /* SQLoadingViewController.h */,
+				A0D05CBF15A6F13D00A2491E /* SQLoadingViewController.m */,
+				A0D05CC015A6F13D00A2491E /* SQMaskView.h */,
+				A0D05CC115A6F13D00A2491E /* SQMaskView.m */,
+			);
+			name = SQCustomViews;
+			path = ../../SQCustomViews;
+			sourceTree = "<group>";
+		};
+		A0D05CC215A6F13D00A2491E /* SQGridView */ = {
+			isa = PBXGroup;
+			children = (
+				A0D05CC315A6F13D00A2491E /* SQGridCell.h */,
+				A0D05CC415A6F13D00A2491E /* SQGridCell.m */,
+				A0D05CC515A6F13D00A2491E /* SQGridScrollView.h */,
+				A0D05CC615A6F13D00A2491E /* SQGridScrollView.m */,
+				A0D05CC715A6F13D00A2491E /* SQGridView.h */,
+				A0D05CC815A6F13D00A2491E /* SQGridView.m */,
+			);
+			name = SQGridView;
+			path = ../../SQGridView;
+			sourceTree = "<group>";
+		};
+		A0D05CCA15A6F13D00A2491E /* SQMedia */ = {
+			isa = PBXGroup;
+			children = (
+				A0D05CCB15A6F13D00A2491E /* SQSoundManager.h */,
+				A0D05CCC15A6F13D00A2491E /* SQSoundManager.mm */,
+			);
+			name = SQMedia;
+			path = ../../SQMedia;
+			sourceTree = "<group>";
+		};
+		A0D05CCD15A6F13D00A2491E /* SQTabBar */ = {
+			isa = PBXGroup;
+			children = (
+				A0D05CCE15A6F13D00A2491E /* SQBadgeView.h */,
+				A0D05CCF15A6F13D00A2491E /* SQBadgeView.m */,
+				A0D05CD015A6F13D00A2491E /* SQTabBarController.h */,
+				A0D05CD115A6F13D00A2491E /* SQTabBarController.m */,
+			);
+			name = SQTabBar;
+			path = ../../SQTabBar;
+			sourceTree = "<group>";
+		};
+		A0D05CD215A6F13D00A2491E /* ThirdParties */ = {
+			isa = PBXGroup;
+			children = (
+				A0D05CD315A6F13D00A2491E /* HUD */,
+			);
+			name = ThirdParties;
+			path = ../../ThirdParties;
+			sourceTree = "<group>";
+		};
+		A0D05CD315A6F13D00A2491E /* HUD */ = {
+			isa = PBXGroup;
+			children = (
+				A0D05CD415A6F13D00A2491E /* MBProgressHUD.h */,
+				A0D05CD515A6F13D00A2491E /* MBProgressHUD.m */,
+			);
+			path = HUD;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		A0D05CA215A6F06800A2491E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A0D05CD615A6F13D00A2491E /* SQColorUtils.h in Headers */,
+				A0D05CD815A6F13D00A2491E /* SQDebugUtils.h in Headers */,
+				A0D05CD915A6F13D00A2491E /* SQGlobalMarco.h in Headers */,
+				A0D05CDA15A6F13D00A2491E /* SQStringUtils.h in Headers */,
+				A0D05CDC15A6F13D00A2491E /* SQAlertView.h in Headers */,
+				A0D05CDE15A6F13D00A2491E /* SQLoadingViewController.h in Headers */,
+				A0D05CE015A6F13D00A2491E /* SQMaskView.h in Headers */,
+				A0D05CE215A6F13D00A2491E /* SQGridCell.h in Headers */,
+				A0D05CE415A6F13D00A2491E /* SQGridScrollView.h in Headers */,
+				A0D05CE615A6F13D00A2491E /* SQGridView.h in Headers */,
+				A0D05CE815A6F13D00A2491E /* SQLibs.h in Headers */,
+				A0D05CE915A6F13D00A2491E /* SQSoundManager.h in Headers */,
+				A0D05CEB15A6F13D00A2491E /* SQBadgeView.h in Headers */,
+				A0D05CED15A6F13D00A2491E /* SQTabBarController.h in Headers */,
+				A0D05CEF15A6F13D00A2491E /* MBProgressHUD.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		A0D05CA315A6F06800A2491E /* SQLibs */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A0D05CB115A6F06800A2491E /* Build configuration list for PBXNativeTarget "SQLibs" */;
+			buildPhases = (
+				A0D05CA015A6F06800A2491E /* Sources */,
+				A0D05CA115A6F06800A2491E /* Frameworks */,
+				A0D05CA215A6F06800A2491E /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SQLibs;
+			productName = SQLibs;
+			productReference = A0D05CA415A6F06800A2491E /* libSQLibs.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A0D05C9B15A6F06800A2491E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+				ORGANIZATIONNAME = "Safe&Quick[http://blog.sina.com.cn/shjborage]";
+			};
+			buildConfigurationList = A0D05C9E15A6F06800A2491E /* Build configuration list for PBXProject "SQLibs" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = A0D05C9915A6F06800A2491E;
+			productRefGroup = A0D05CA515A6F06800A2491E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A0D05CA315A6F06800A2491E /* SQLibs */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A0D05CA015A6F06800A2491E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A0D05CD715A6F13D00A2491E /* SQColorUtils.m in Sources */,
+				A0D05CDB15A6F13D00A2491E /* SQStringUtils.m in Sources */,
+				A0D05CDD15A6F13D00A2491E /* SQAlertView.m in Sources */,
+				A0D05CDF15A6F13D00A2491E /* SQLoadingViewController.m in Sources */,
+				A0D05CE115A6F13D00A2491E /* SQMaskView.m in Sources */,
+				A0D05CE315A6F13D00A2491E /* SQGridCell.m in Sources */,
+				A0D05CE515A6F13D00A2491E /* SQGridScrollView.m in Sources */,
+				A0D05CE715A6F13D00A2491E /* SQGridView.m in Sources */,
+				A0D05CEA15A6F13D00A2491E /* SQSoundManager.mm in Sources */,
+				A0D05CEC15A6F13D00A2491E /* SQBadgeView.m in Sources */,
+				A0D05CEE15A6F13D00A2491E /* SQTabBarController.m in Sources */,
+				A0D05CF015A6F13D00A2491E /* MBProgressHUD.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		A0D05CAF15A6F06800A2491E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				SDKROOT = iphoneos;
+				SYMROOT = build;
+			};
+			name = Debug;
+		};
+		A0D05CB015A6F06800A2491E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				SDKROOT = iphoneos;
+				SYMROOT = build;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A0D05CB215A6F06800A2491E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/SQLibs.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SQLibs/SQLibs-Prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SHARED_PRECOMPS_DIR = "$(SRCROOT)/SQLibs/build";
+				SKIP_INSTALL = YES;
+				SYMROOT = "$(SRCROOT)SQLibs/build";
+			};
+			name = Debug;
+		};
+		A0D05CB315A6F06800A2491E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/SQLibs.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SQLibs/SQLibs-Prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SHARED_PRECOMPS_DIR = "$(SRCROOT)/SQLibs/build";
+				SKIP_INSTALL = YES;
+				SYMROOT = "$(SRCROOT)SQLibs/build";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A0D05C9E15A6F06800A2491E /* Build configuration list for PBXProject "SQLibs" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A0D05CAF15A6F06800A2491E /* Debug */,
+				A0D05CB015A6F06800A2491E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A0D05CB115A6F06800A2491E /* Build configuration list for PBXNativeTarget "SQLibs" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A0D05CB215A6F06800A2491E /* Debug */,
+				A0D05CB315A6F06800A2491E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A0D05C9B15A6F06800A2491E /* Project object */;
+}

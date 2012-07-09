@@ -15,7 +15,18 @@
 		A0D4848115A6993000CC9E99 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A0D4848015A6993000CC9E99 /* AppDelegate.m */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		A0D05D1815A6F82300A2491E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A0D05D1415A6F82300A2491E /* SQLibs.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = A0D05CA415A6F06800A2491E;
+			remoteInfo = SQLibs;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		A0D05D1415A6F82300A2491E /* SQLibs.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SQLibs.xcodeproj; path = ../../SQLibs_StaticLibrary/SQLibs.xcodeproj; sourceTree = "<group>"; };
 		A0D4846C15A6993000CC9E99 /* test_SQCommon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = test_SQCommon.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0D4847015A6993000CC9E99 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		A0D4847215A6993000CC9E99 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -42,6 +53,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A0D05D1515A6F82300A2491E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A0D05D1915A6F82300A2491E /* libSQLibs.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		A0D4846115A6993000CC9E99 = {
 			isa = PBXGroup;
 			children = (
@@ -62,6 +81,7 @@
 		A0D4846F15A6993000CC9E99 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A0D05D1415A6F82300A2491E /* SQLibs.xcodeproj */,
 				A0D4847015A6993000CC9E99 /* UIKit.framework */,
 				A0D4847215A6993000CC9E99 /* Foundation.framework */,
 				A0D4847415A6993000CC9E99 /* CoreGraphics.framework */,
@@ -129,12 +149,28 @@
 			mainGroup = A0D4846115A6993000CC9E99;
 			productRefGroup = A0D4846D15A6993000CC9E99 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = A0D05D1515A6F82300A2491E /* Products */;
+					ProjectRef = A0D05D1415A6F82300A2491E /* SQLibs.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				A0D4846B15A6993000CC9E99 /* test_SQCommon */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		A0D05D1915A6F82300A2491E /* libSQLibs.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libSQLibs.a;
+			remoteRef = A0D05D1815A6F82300A2491E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		A0D4846A15A6993000CC9E99 /* Resources */ = {
@@ -190,7 +226,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -208,7 +244,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -257,6 +293,7 @@
 				A0D4848615A6993000CC9E99 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

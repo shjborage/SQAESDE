@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "SQLibs.h"
 
 @implementation AppDelegate
 
@@ -18,12 +19,43 @@
     [super dealloc];
 }
 
+- (void)test
+{
+    UIButton *t_btnPlay = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+    t_btnPlay.frame = CGRectMake(50.0f, 50.0f, 100.0f, 29.0f);
+    [t_btnPlay setTitle:@"Play" forState:UIControlStateNormal];
+    t_btnPlay.tag = 1;
+    [t_btnPlay addTarget:self action:@selector(btnPressed:) forControlEvents:UIControlEventTouchUpInside];
+    [self.window addSubview:t_btnPlay];
+    
+    UIButton *t_btnStop = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+    t_btnStop.frame = CGRectMake(self.window.frame.size.width - 100.0f - 50.0f, 50.0f, 100.0f, 29.0f);
+    [t_btnStop setTitle:@"Stop" forState:UIControlStateNormal];
+    t_btnStop.tag = 2;
+    [t_btnStop addTarget:self action:@selector(btnPressed:) forControlEvents:UIControlEventTouchUpInside];
+    [self.window addSubview:t_btnStop];
+}
+
+#pragma mark - actions
+
+- (void)btnPressed:(id)sender
+{
+    UIButton *t_btn = (UIButton *)sender;
+    if (t_btn.tag == 1)
+        [[SQSoundManager defaultManager] playCafFile:[[NSBundle mainBundle] pathForResource:@"Travel" ofType:@"caf"] volume:1.0f];
+    else 
+        [[SQSoundManager defaultManager] stop];
+}
+
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]] autorelease];
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
+    
+    [self test];
+    
     return YES;
 }
 

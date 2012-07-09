@@ -20,6 +20,10 @@ AVAudioPlayerDelegate
 
 + (id)defaultManager;
 
+/*
+ * fVolume:The volume for the sound. The nominal range is from 0.0 to 1.0.
+ */
 - (void)playCafFile:(NSString *)strCafPath volume:(CGFloat)fVolume;
+- (void)stop;
 
 @end

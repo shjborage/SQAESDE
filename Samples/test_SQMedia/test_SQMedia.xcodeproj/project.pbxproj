@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A03EB1BF15AA7C7C00BC05A9 /* Travel.caf in Resources */ = {isa = PBXBuildFile; fileRef = A03EB1BE15AA7C7C00BC05A9 /* Travel.caf */; };
+		A03EB1C615AA7D6C00BC05A9 /* libSQLibs.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A0D05D1015A6F7D400A2491E /* libSQLibs.a */; };
+		A03EB1CA15AA7D8700BC05A9 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A03EB1C915AA7D8700BC05A9 /* AVFoundation.framework */; };
+		A03EB1CC15AA7D9600BC05A9 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A03EB1CB15AA7D9600BC05A9 /* AudioToolbox.framework */; };
 		A0D4849715A6994F00CC9E99 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0D4849615A6994F00CC9E99 /* UIKit.framework */; };
 		A0D4849915A6994F00CC9E99 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0D4849815A6994F00CC9E99 /* Foundation.framework */; };
 		A0D4849B15A6994F00CC9E99 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0D4849A15A6994F00CC9E99 /* CoreGraphics.framework */; };
@@ -15,7 +19,28 @@
 		A0D484A715A6995000CC9E99 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A0D484A615A6995000CC9E99 /* AppDelegate.m */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		A0D05D0F15A6F7D400A2491E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A0D05D0B15A6F7D400A2491E /* SQLibs.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = A0D05CA415A6F06800A2491E;
+			remoteInfo = SQLibs;
+		};
+		A0D05D1215A6F80700A2491E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A0D05D0B15A6F7D400A2491E /* SQLibs.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = A0D05CA315A6F06800A2491E;
+			remoteInfo = SQLibs;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		A03EB1BE15AA7C7C00BC05A9 /* Travel.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Travel.caf; sourceTree = "<group>"; };
+		A03EB1C915AA7D8700BC05A9 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		A03EB1CB15AA7D9600BC05A9 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		A0D05D0B15A6F7D400A2491E /* SQLibs.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SQLibs.xcodeproj; path = /Volumes/Data/study/GitHub/SQLibs/Samples/../SQLibs_StaticLibrary/SQLibs.xcodeproj; sourceTree = "<absolute>"; };
 		A0D4849215A6994F00CC9E99 /* test_SQMedia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = test_SQMedia.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0D4849615A6994F00CC9E99 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		A0D4849815A6994F00CC9E99 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -33,6 +58,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A03EB1CC15AA7D9600BC05A9 /* AudioToolbox.framework in Frameworks */,
+				A03EB1CA15AA7D8700BC05A9 /* AVFoundation.framework in Frameworks */,
+				A03EB1C615AA7D6C00BC05A9 /* libSQLibs.a in Frameworks */,
 				A0D4849715A6994F00CC9E99 /* UIKit.framework in Frameworks */,
 				A0D4849915A6994F00CC9E99 /* Foundation.framework in Frameworks */,
 				A0D4849B15A6994F00CC9E99 /* CoreGraphics.framework in Frameworks */,
@@ -42,11 +70,29 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A03EB1BD15AA7C7C00BC05A9 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A03EB1BE15AA7C7C00BC05A9 /* Travel.caf */,
+			);
+			name = Resources;
+			path = test_SQMedia/Resources;
+			sourceTree = "<group>";
+		};
+		A0D05D0C15A6F7D400A2491E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A0D05D1015A6F7D400A2491E /* libSQLibs.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		A0D4848715A6994F00CC9E99 = {
 			isa = PBXGroup;
 			children = (
 				A0D4849C15A6994F00CC9E99 /* test_SQMedia */,
 				A0D4849515A6994F00CC9E99 /* Frameworks */,
+				A03EB1BD15AA7C7C00BC05A9 /* Resources */,
 				A0D4849315A6994F00CC9E99 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -62,6 +108,9 @@
 		A0D4849515A6994F00CC9E99 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A0D05D0B15A6F7D400A2491E /* SQLibs.xcodeproj */,
+				A03EB1CB15AA7D9600BC05A9 /* AudioToolbox.framework */,
+				A03EB1C915AA7D8700BC05A9 /* AVFoundation.framework */,
 				A0D4849615A6994F00CC9E99 /* UIKit.framework */,
 				A0D4849815A6994F00CC9E99 /* Foundation.framework */,
 				A0D4849A15A6994F00CC9E99 /* CoreGraphics.framework */,
@@ -104,6 +153,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				A0D05D1315A6F80700A2491E /* PBXTargetDependency */,
 			);
 			name = test_SQMedia;
 			productName = test_SQMedia;
@@ -129,6 +179,12 @@
 			mainGroup = A0D4848715A6994F00CC9E99;
 			productRefGroup = A0D4849315A6994F00CC9E99 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = A0D05D0C15A6F7D400A2491E /* Products */;
+					ProjectRef = A0D05D0B15A6F7D400A2491E /* SQLibs.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				A0D4849115A6994F00CC9E99 /* test_SQMedia */,
@@ -136,12 +192,23 @@
 		};
 /* End PBXProject section */
 
+/* Begin PBXReferenceProxy section */
+		A0D05D1015A6F7D400A2491E /* libSQLibs.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libSQLibs.a;
+			remoteRef = A0D05D0F15A6F7D400A2491E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
 /* Begin PBXResourcesBuildPhase section */
 		A0D4849015A6994F00CC9E99 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				A0D484A115A6995000CC9E99 /* InfoPlist.strings in Resources */,
+				A03EB1BF15AA7C7C00BC05A9 /* Travel.caf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -158,6 +225,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A0D05D1315A6F80700A2491E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SQLibs;
+			targetProxy = A0D05D1215A6F80700A2491E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		A0D4849F15A6995000CC9E99 /* InfoPlist.strings */ = {
@@ -221,7 +296,9 @@
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "test_SQMedia/test_SQMedia-Prefix.pch";
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/../../**";
 				INFOPLIST_FILE = "test_SQMedia/test_SQMedia-Info.plist";
+				LIBRARY_SEARCH_PATHS = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -232,7 +309,9 @@
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "test_SQMedia/test_SQMedia-Prefix.pch";
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/../../**";
 				INFOPLIST_FILE = "test_SQMedia/test_SQMedia-Info.plist";
+				LIBRARY_SEARCH_PATHS = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -257,6 +336,7 @@
 				A0D484AC15A6995000CC9E99 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
