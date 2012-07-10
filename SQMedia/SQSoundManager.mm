@@ -53,13 +53,15 @@ void audioRouteChangeListenerCallback (
 	NSURL *newURL = [[NSURL alloc] initFileURLWithPath:strCafPath];
 
 	// Registers this class as the delegate of the audio session.
-	[[AVAudioSession sharedInstance] setDelegate: self];
+	[[AVAudioSession sharedInstance] setDelegate:self];
 	
 	// The AmbientSound category allows application audio to mix with Media Player
 	// audio. The category also indicates that application audio should stop playing 
 	// if the Ring/Siilent switch is set to "silent" or the screen locks.
-// remove by shjborage@gmail.com cmmb error...
-//	[[AVAudioSession sharedInstance] setCategory: AVAudioSessionCategoryAmbient error: nil];
+    // Upper was describe the Category "AVAudioSessionCategoryAmbient", for play audio
+    // in the backgroud, modify it to "AVAudioSessionCategoryPlayback" and add 
+    // Required background modes in app info.plist for key "App plays audio".
+	[[AVAudioSession sharedInstance] setCategory:AVAudioSessionCategoryAmbient error: nil];
 
 	// Registers the audio route change listener callback function
 	AudioSessionAddPropertyListener (
@@ -89,6 +91,12 @@ void audioRouteChangeListenerCallback (
     [_audioPlayer play];
     
     [newURL release];
+}
+
+- (void)stop
+{
+    if (_audioPlayer != nil)
+        [_audioPlayer stop];
 }
 
 #pragma mark AV Foundation delegate methods____________

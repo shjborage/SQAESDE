@@ -1,0 +1,346 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A03EB1BF15AA7C7C00BC05A9 /* Travel.caf in Resources */ = {isa = PBXBuildFile; fileRef = A03EB1BE15AA7C7C00BC05A9 /* Travel.caf */; };
+		A03EB1C615AA7D6C00BC05A9 /* libSQLibs.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A0D05D1015A6F7D400A2491E /* libSQLibs.a */; };
+		A03EB1CA15AA7D8700BC05A9 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A03EB1C915AA7D8700BC05A9 /* AVFoundation.framework */; };
+		A03EB1CC15AA7D9600BC05A9 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A03EB1CB15AA7D9600BC05A9 /* AudioToolbox.framework */; };
+		A0D4849715A6994F00CC9E99 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0D4849615A6994F00CC9E99 /* UIKit.framework */; };
+		A0D4849915A6994F00CC9E99 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0D4849815A6994F00CC9E99 /* Foundation.framework */; };
+		A0D4849B15A6994F00CC9E99 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0D4849A15A6994F00CC9E99 /* CoreGraphics.framework */; };
+		A0D484A115A6995000CC9E99 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A0D4849F15A6995000CC9E99 /* InfoPlist.strings */; };
+		A0D484A315A6995000CC9E99 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A0D484A215A6995000CC9E99 /* main.m */; };
+		A0D484A715A6995000CC9E99 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A0D484A615A6995000CC9E99 /* AppDelegate.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A0D05D0F15A6F7D400A2491E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A0D05D0B15A6F7D400A2491E /* SQLibs.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = A0D05CA415A6F06800A2491E;
+			remoteInfo = SQLibs;
+		};
+		A0D05D1215A6F80700A2491E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A0D05D0B15A6F7D400A2491E /* SQLibs.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = A0D05CA315A6F06800A2491E;
+			remoteInfo = SQLibs;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A03EB1BE15AA7C7C00BC05A9 /* Travel.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Travel.caf; sourceTree = "<group>"; };
+		A03EB1C915AA7D8700BC05A9 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		A03EB1CB15AA7D9600BC05A9 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		A0D05D0B15A6F7D400A2491E /* SQLibs.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SQLibs.xcodeproj; path = /Volumes/Data/study/GitHub/SQLibs/Samples/../SQLibs_StaticLibrary/SQLibs.xcodeproj; sourceTree = "<absolute>"; };
+		A0D4849215A6994F00CC9E99 /* test_SQMedia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = test_SQMedia.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A0D4849615A6994F00CC9E99 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		A0D4849815A6994F00CC9E99 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		A0D4849A15A6994F00CC9E99 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		A0D4849E15A6995000CC9E99 /* test_SQMedia-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "test_SQMedia-Info.plist"; sourceTree = "<group>"; };
+		A0D484A015A6995000CC9E99 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A0D484A215A6995000CC9E99 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A0D484A415A6995000CC9E99 /* test_SQMedia-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "test_SQMedia-Prefix.pch"; sourceTree = "<group>"; };
+		A0D484A515A6995000CC9E99 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		A0D484A615A6995000CC9E99 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A0D4848F15A6994F00CC9E99 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A03EB1CC15AA7D9600BC05A9 /* AudioToolbox.framework in Frameworks */,
+				A03EB1CA15AA7D8700BC05A9 /* AVFoundation.framework in Frameworks */,
+				A03EB1C615AA7D6C00BC05A9 /* libSQLibs.a in Frameworks */,
+				A0D4849715A6994F00CC9E99 /* UIKit.framework in Frameworks */,
+				A0D4849915A6994F00CC9E99 /* Foundation.framework in Frameworks */,
+				A0D4849B15A6994F00CC9E99 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A03EB1BD15AA7C7C00BC05A9 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A03EB1BE15AA7C7C00BC05A9 /* Travel.caf */,
+			);
+			name = Resources;
+			path = test_SQMedia/Resources;
+			sourceTree = "<group>";
+		};
+		A0D05D0C15A6F7D400A2491E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A0D05D1015A6F7D400A2491E /* libSQLibs.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A0D4848715A6994F00CC9E99 = {
+			isa = PBXGroup;
+			children = (
+				A0D4849C15A6994F00CC9E99 /* test_SQMedia */,
+				A0D4849515A6994F00CC9E99 /* Frameworks */,
+				A03EB1BD15AA7C7C00BC05A9 /* Resources */,
+				A0D4849315A6994F00CC9E99 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A0D4849315A6994F00CC9E99 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A0D4849215A6994F00CC9E99 /* test_SQMedia.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A0D4849515A6994F00CC9E99 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A0D05D0B15A6F7D400A2491E /* SQLibs.xcodeproj */,
+				A03EB1CB15AA7D9600BC05A9 /* AudioToolbox.framework */,
+				A03EB1C915AA7D8700BC05A9 /* AVFoundation.framework */,
+				A0D4849615A6994F00CC9E99 /* UIKit.framework */,
+				A0D4849815A6994F00CC9E99 /* Foundation.framework */,
+				A0D4849A15A6994F00CC9E99 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A0D4849C15A6994F00CC9E99 /* test_SQMedia */ = {
+			isa = PBXGroup;
+			children = (
+				A0D484A515A6995000CC9E99 /* AppDelegate.h */,
+				A0D484A615A6995000CC9E99 /* AppDelegate.m */,
+				A0D4849D15A6995000CC9E99 /* Supporting Files */,
+			);
+			path = test_SQMedia;
+			sourceTree = "<group>";
+		};
+		A0D4849D15A6995000CC9E99 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A0D4849E15A6995000CC9E99 /* test_SQMedia-Info.plist */,
+				A0D4849F15A6995000CC9E99 /* InfoPlist.strings */,
+				A0D484A215A6995000CC9E99 /* main.m */,
+				A0D484A415A6995000CC9E99 /* test_SQMedia-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A0D4849115A6994F00CC9E99 /* test_SQMedia */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A0D484AA15A6995000CC9E99 /* Build configuration list for PBXNativeTarget "test_SQMedia" */;
+			buildPhases = (
+				A0D4848E15A6994F00CC9E99 /* Sources */,
+				A0D4848F15A6994F00CC9E99 /* Frameworks */,
+				A0D4849015A6994F00CC9E99 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A0D05D1315A6F80700A2491E /* PBXTargetDependency */,
+			);
+			name = test_SQMedia;
+			productName = test_SQMedia;
+			productReference = A0D4849215A6994F00CC9E99 /* test_SQMedia.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A0D4848915A6994F00CC9E99 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+				ORGANIZATIONNAME = "Safe&Quick[http://blog.sina.com.cn/shjborage]";
+			};
+			buildConfigurationList = A0D4848C15A6994F00CC9E99 /* Build configuration list for PBXProject "test_SQMedia" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = A0D4848715A6994F00CC9E99;
+			productRefGroup = A0D4849315A6994F00CC9E99 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = A0D05D0C15A6F7D400A2491E /* Products */;
+					ProjectRef = A0D05D0B15A6F7D400A2491E /* SQLibs.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				A0D4849115A6994F00CC9E99 /* test_SQMedia */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		A0D05D1015A6F7D400A2491E /* libSQLibs.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libSQLibs.a;
+			remoteRef = A0D05D0F15A6F7D400A2491E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A0D4849015A6994F00CC9E99 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A0D484A115A6995000CC9E99 /* InfoPlist.strings in Resources */,
+				A03EB1BF15AA7C7C00BC05A9 /* Travel.caf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A0D4848E15A6994F00CC9E99 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A0D484A315A6995000CC9E99 /* main.m in Sources */,
+				A0D484A715A6995000CC9E99 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A0D05D1315A6F80700A2491E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SQLibs;
+			targetProxy = A0D05D1215A6F80700A2491E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A0D4849F15A6995000CC9E99 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A0D484A015A6995000CC9E99 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A0D484A815A6995000CC9E99 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A0D484A915A6995000CC9E99 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A0D484AB15A6995000CC9E99 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "test_SQMedia/test_SQMedia-Prefix.pch";
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/../../**";
+				INFOPLIST_FILE = "test_SQMedia/test_SQMedia-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				LIBRARY_SEARCH_PATHS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		A0D484AC15A6995000CC9E99 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "test_SQMedia/test_SQMedia-Prefix.pch";
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/../../**";
+				INFOPLIST_FILE = "test_SQMedia/test_SQMedia-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				LIBRARY_SEARCH_PATHS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A0D4848C15A6994F00CC9E99 /* Build configuration list for PBXProject "test_SQMedia" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A0D484A815A6995000CC9E99 /* Debug */,
+				A0D484A915A6995000CC9E99 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A0D484AA15A6995000CC9E99 /* Build configuration list for PBXNativeTarget "test_SQMedia" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A0D484AB15A6995000CC9E99 /* Debug */,
+				A0D484AC15A6995000CC9E99 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A0D4848915A6994F00CC9E99 /* Project object */;
+}

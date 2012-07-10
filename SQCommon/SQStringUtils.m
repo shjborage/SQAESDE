@@ -193,7 +193,11 @@ static const char encodingTable[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopq
     NSDate *date_now = [NSDate date];
     NSDateFormatter *df = [[[NSDateFormatter alloc] init] autorelease];
 //    [df setDateFormat:@"yyyy-MM-dd HH:mm:ss"];
-    [df setDateFormat:strFormat];
+    if ([strFormat length] > 0)
+        [df setDateFormat:strFormat];
+    else 
+        [df setDateFormat:@"yyyy-MM-dd HH:mm:ss"];
+    
     return [df stringFromDate:date_now];
 }
 
@@ -228,6 +232,40 @@ static const char encodingTable[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopq
     strTmp = [strTmp stringByReplacingOccurrencesOfString:@">" withString:@" "];
     strTmp = [strTmp stringByReplacingOccurrencesOfString:@"|" withString:@" "];
     return strTmp;
+}
+
++ (NSString *)getTimestamp
+{
+    NSDate* dat = [NSDate dateWithTimeIntervalSinceNow:0];
+    NSTimeInterval a=[dat timeIntervalSince1970]*1000;
+    NSString *timeString = [NSString stringWithFormat:@"%f", a];
+    NSInteger location = [timeString rangeOfString:@"."].location;
+    timeString=[timeString substringToIndex:location];
+    
+    return timeString;
+}
+
+- (NSDateComponents *)getDateComponents:(NSString *)strFormat
+{
+    // string to date
+    NSDateFormatter *df = [[NSDateFormatter alloc] init];
+    
+    if ([strFormat length] > 0)
+        [df setDateFormat:strFormat];//@"yyyy-MM-dd HH:mm:ss"];
+    else 
+        [df setDateFormat:@"yyyy-MM-dd HH:mm:ss"];
+    
+    NSDate* date_new = [df dateFromString:self];
+    
+    // date to dateComponets
+    NSCalendar *gregorian = [[NSCalendar alloc] initWithCalendarIdentifier:NSGregorianCalendar];
+    NSUInteger uFlag = kCFCalendarUnitYear | kCFCalendarUnitMonth | kCFCalendarUnitDay |kCFCalendarUnitHour | kCFCalendarUnitMinute | kCFCalendarUnitSecond;
+    NSDateComponents *dcNew = [gregorian components:uFlag fromDate:date_new];
+    
+    [df release];
+    [gregorian release];
+    
+    return dcNew;
 }
 
 @end
