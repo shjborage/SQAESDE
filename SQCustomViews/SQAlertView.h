@@ -15,6 +15,8 @@ MBProgressHUDDelegate
 >
 {
     id _delegate;
+    
+    // - (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSNumber *)nnIndex
     SEL _action;
     
     MBProgressHUD *HUD;

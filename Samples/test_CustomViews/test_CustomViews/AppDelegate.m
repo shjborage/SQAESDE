@@ -19,26 +19,21 @@
     [super dealloc];
 }
 
-- (void)testSQAlertView
-{
-    [SQAlertView defaultAlert] alert
-}
-
 - (void)test
 {
-    UIButton *t_btnPlay = [UIButton buttonWithType:UIButtonTypeRoundedRect];
-    t_btnPlay.frame = CGRectMake(50.0f, 50.0f, 100.0f, 29.0f);
-    [t_btnPlay setTitle:@"Play" forState:UIControlStateNormal];
-    t_btnPlay.tag = 1;
-    [t_btnPlay addTarget:self action:@selector(btnPressed:) forControlEvents:UIControlEventTouchUpInside];
-    [self.window addSubview:t_btnPlay];
+    UIButton *t_btnAlert1 = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+    t_btnAlert1.frame = CGRectMake(50.0f, 50.0f, 100.0f, 29.0f);
+    [t_btnAlert1 setTitle:@"Info Alert" forState:UIControlStateNormal];
+    t_btnAlert1.tag = 1;
+    [t_btnAlert1 addTarget:self action:@selector(btnPressed:) forControlEvents:UIControlEventTouchUpInside];
+    [self.window addSubview:t_btnAlert1];
     
-    UIButton *t_btnStop = [UIButton buttonWithType:UIButtonTypeRoundedRect];
-    t_btnStop.frame = CGRectMake(self.window.frame.size.width - 100.0f - 50.0f, 50.0f, 100.0f, 29.0f);
-    [t_btnStop setTitle:@"Stop" forState:UIControlStateNormal];
-    t_btnStop.tag = 2;
-    [t_btnStop addTarget:self action:@selector(btnPressed:) forControlEvents:UIControlEventTouchUpInside];
-    [self.window addSubview:t_btnStop];
+    UIButton *t_btnAlert2 = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+    t_btnAlert2.frame = CGRectMake(self.window.frame.size.width - 100.0f - 50.0f, 50.0f, 100.0f, 29.0f);
+    [t_btnAlert2 setTitle:@"Confirm Alert" forState:UIControlStateNormal];
+    t_btnAlert2.tag = 2;
+    [t_btnAlert2 addTarget:self action:@selector(btnPressed:) forControlEvents:UIControlEventTouchUpInside];
+    [self.window addSubview:t_btnAlert2];
 }
 
 #pragma mark - actions
@@ -46,10 +41,18 @@
 - (void)btnPressed:(id)sender
 {
     UIButton *t_btn = (UIButton *)sender;
-    if (t_btn.tag == 1)
-        [[SQSoundManager defaultManager] playCafFile:[[NSBundle mainBundle] pathForResource:@"Travel" ofType:@"caf"] volume:1.0f];
-    else 
-        [[SQSoundManager defaultManager] stop];
+    if (t_btn.tag == 1) {
+        [[SQAlertView defaultAlert] alert:@"info" message:@"this is a info alert"];
+    } else if (t_btn.tag == 2) {
+        [[SQAlertView defaultAlert] alert:@"info" message:@"this is a comfirm alert, ok?" delegate:self action:@selector(alertView:clickedButtonAtIndex:)];
+    }
+}
+
+#pragma mark - confirm alert
+
+- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSNumber *)nnIndex
+{
+    SQLOG(@"btn index:%d", [nnIndex integerValue]);
 }
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
