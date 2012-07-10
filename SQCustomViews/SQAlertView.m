@@ -108,6 +108,7 @@ static SQAlertView *g_Instance = nil;
     _windowPrompt.userInteractionEnabled = YES;
     [_windowPrompt addSubview:HUD];
     
+    // 37x-Checkmark.png is not exist, only the black backgroud.
     HUD.customView = [[[UIImageView alloc] initWithImage:[UIImage imageNamed:@"37x-Checkmark.png"]] autorelease];
     
     // Set custom view mode
@@ -124,7 +125,7 @@ static SQAlertView *g_Instance = nil;
         ;   // call stop manual
 }
 
--(void)stopPromptMessage
+- (void)stopPromptMessage
 {
     if (HUD != nil) {
         [HUD removeFromSuperview];
@@ -135,13 +136,24 @@ static SQAlertView *g_Instance = nil;
     _windowPrompt.userInteractionEnabled = NO;
 }
 
--(void)setDimBackground:(BOOL)bDim
+- (void)setDimBackground:(BOOL)bDim
 {
     if (HUD == nil)
         return;
     
     // 类似Alert，四周画激变的效果
     HUD.dimBackground = bDim;
+}
+
+- (void)setUserInteraction:(BOOL)bEnable
+{
+    if (HUD == nil)
+        return;
+    
+    if (_windowPrompt == nil)
+        return;
+
+    _windowPrompt.userInteractionEnabled = !bEnable;
 }
 
 #pragma mark -

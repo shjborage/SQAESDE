@@ -10,7 +10,9 @@
 #import "MBProgressHUD.h"
 
 @interface SQAlertView : UIViewController
-<MBProgressHUDDelegate>
+<
+MBProgressHUDDelegate
+>
 {
     id _delegate;
     SEL _action;
@@ -34,7 +36,8 @@
 - (void)promptMessage:(NSString *)strMsg 
            atDuration:(NSTimeInterval)dDuration
                atMode:(MBProgressHUDMode)mode;
--(void)stopPromptMessage;
--(void)setDimBackground:(BOOL)bDim;
+- (void)stopPromptMessage;
+- (void)setDimBackground:(BOOL)bDim;
+- (void)setUserInteraction:(BOOL)bEnable;
 
 @end
