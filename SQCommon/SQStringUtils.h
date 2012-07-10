@@ -8,6 +8,7 @@
 #import <UIKit/UIKit.h>
 
 @interface NSString (NSStringUtils)
+
 - (NSString *)encodeAsURIComponent;
 - (NSString *)escapeHTML;
 - (NSString *)unescapeHTML;
@@ -16,12 +17,13 @@
 - (NSString *)toUnicode;                // add by shjborage 20111106.
 + (NSString *)getUUID;                  // add by shjborage Jan 24, 2012
 + (NSString *)getCurrentDateTime:(NSString *)strFormat;
-                                        // modify by shjborage Mar 29, 2012
+                                        // modify by shjborage July 9, 2012
 - (int)charNumber;                      // add by shjborage Feb 5, 2012
 - (NSString *)useAsFileName;            // add by shjborage Apr 18, 2012
 
 + (NSString *)getTimestamp;             // add by shjborage May 25, 2012(from IWVideoLottery by bin Liu)
-- (NSDateComponents *)getDateComponents:(NSString *)strFormat;  // add by shjborage Jun 1, 2012
+- (NSDateComponents *)getDateComponents:(NSString *)strFormat;  
+                                        // add by shjborage Jun 1, 2012
 @end
 
 
