@@ -7,14 +7,18 @@
 //
 
 #import "AppDelegate.h"
+#import "SQLibs.h"
 
 @implementation AppDelegate
 
 @synthesize window = _window;
+@synthesize vcRoot = _vcRoot;
 
 - (void)dealloc
 {
     [_window release];
+    SQ_SAFERELEASE(_vcRoot);
+    
     [super dealloc];
 }
 
@@ -23,7 +27,12 @@
     self.window = [[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]] autorelease];
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
+    
+    _vcRoot = [[TestViewController alloc] init];
+    self.window.rootViewController = _vcRoot;
+    
     [self.window makeKeyAndVisible];
+    
     return YES;
 }
 

@@ -20,7 +20,10 @@ SQLibs_Samples.xcworkspace
 
 An Xcworkspace for all the tests.
 
+1.Each Guide is located in AppDelegate.h's header.
 
 
 Later version:
 1.How to build SQLibs maybe complex, I will try to write a shell script to simplify it.
+2.The include directory "SQLibs_include" is now Empty, Later I will try to write
+a simply app on the mac to move them from src path.

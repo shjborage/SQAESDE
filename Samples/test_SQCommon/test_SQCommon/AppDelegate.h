@@ -7,9 +7,23 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "TestViewController.h"
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
+/*
+ *  1.Add head search path for SQLibs.
+ *  2.Add "Other Link Flags" -ObjC
+ *  3.Add Library or library project(dependence).
+ */
 
+@interface AppDelegate : UIResponder
+<
+UIApplicationDelegate
+>
+{
+    TestViewController *_vcRoot;
+}
+
+@property (nonatomic, retain, readonly) TestViewController *vcRoot;
 @property (strong, nonatomic) UIWindow *window;
 
 @end

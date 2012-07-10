@@ -11,6 +11,8 @@
 // 2.AVFoundation.framework(SQMedia)
 // 3.AudioToolbox.framework(SQMedia)
 
+// Add "Other Link Flags" -ObjC
+
 #ifndef _SQLibs_h
 #define _SQLibs_h
 

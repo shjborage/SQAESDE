@@ -298,6 +298,7 @@
 				GCC_PREFIX_HEADER = "test_SQMedia/test_SQMedia-Prefix.pch";
 				HEADER_SEARCH_PATHS = "$(SRCROOT)/../../**";
 				INFOPLIST_FILE = "test_SQMedia/test_SQMedia-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
 				LIBRARY_SEARCH_PATHS = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
@@ -311,6 +312,7 @@
 				GCC_PREFIX_HEADER = "test_SQMedia/test_SQMedia-Prefix.pch";
 				HEADER_SEARCH_PATHS = "$(SRCROOT)/../../**";
 				INFOPLIST_FILE = "test_SQMedia/test_SQMedia-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
 				LIBRARY_SEARCH_PATHS = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;

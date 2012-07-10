@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A0910D2415ABD239002D6835 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0910D2315ABD239002D6835 /* QuartzCore.framework */; };
+		A0910D2815ABD240002D6835 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0910D2615ABD240002D6835 /* AudioToolbox.framework */; };
+		A0910D2915ABD240002D6835 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0910D2715ABD240002D6835 /* AVFoundation.framework */; };
 		A0D05CA815A6F06800A2491E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0D05CA715A6F06800A2491E /* Foundation.framework */; };
 		A0D05CD615A6F13D00A2491E /* SQColorUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = A0D05CB515A6F13D00A2491E /* SQColorUtils.h */; };
 		A0D05CD715A6F13D00A2491E /* SQColorUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = A0D05CB615A6F13D00A2491E /* SQColorUtils.m */; };
@@ -40,6 +43,9 @@
 /* Begin PBXFileReference section */
 		A03EB1D115AA82FB00BC05A9 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = README.md; path = ../../README.md; sourceTree = "<group>"; };
 		A03EB1D215AA82FB00BC05A9 /* SQLibs.mmap */ = {isa = PBXFileReference; lastKnownFileType = file; name = SQLibs.mmap; path = ../../SQLibs.mmap; sourceTree = "<group>"; };
+		A0910D2315ABD239002D6835 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		A0910D2615ABD240002D6835 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		A0910D2715ABD240002D6835 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		A0D05CA415A6F06800A2491E /* libSQLibs.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libSQLibs.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0D05CA715A6F06800A2491E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		A0D05CAB15A6F06800A2491E /* SQLibs-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SQLibs-Prefix.pch"; sourceTree = "<group>"; };
@@ -77,6 +83,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A0910D2815ABD240002D6835 /* AudioToolbox.framework in Frameworks */,
+				A0910D2915ABD240002D6835 /* AVFoundation.framework in Frameworks */,
+				A0910D2415ABD239002D6835 /* QuartzCore.framework in Frameworks */,
 				A0D05CA815A6F06800A2491E /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -104,6 +113,9 @@
 		A0D05CA615A6F06800A2491E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A0910D2615ABD240002D6835 /* AudioToolbox.framework */,
+				A0910D2715ABD240002D6835 /* AVFoundation.framework */,
+				A0910D2315ABD239002D6835 /* QuartzCore.framework */,
 				A0D05CA715A6F06800A2491E /* Foundation.framework */,
 			);
 			name = Frameworks;
@@ -137,10 +149,10 @@
 		A0D05CB415A6F13D00A2491E /* SQCommon */ = {
 			isa = PBXGroup;
 			children = (
+				A0D05CB815A6F13D00A2491E /* SQGlobalMarco.h */,
+				A0D05CB715A6F13D00A2491E /* SQDebugUtils.h */,
 				A0D05CB515A6F13D00A2491E /* SQColorUtils.h */,
 				A0D05CB615A6F13D00A2491E /* SQColorUtils.m */,
-				A0D05CB715A6F13D00A2491E /* SQDebugUtils.h */,
-				A0D05CB815A6F13D00A2491E /* SQGlobalMarco.h */,
 				A0D05CB915A6F13D00A2491E /* SQStringUtils.h */,
 				A0D05CBA15A6F13D00A2491E /* SQStringUtils.m */,
 			);

@@ -11,7 +11,7 @@
 
 #ifdef SQDEBUG
 #  define SQLOG(...) NSLog(__VA_ARGS__)
-#  define SQLOGRECT(r) NSLog(@"(%.1fx%.1f)-(%.1fx%.1f)", \
+#  define SQLOG_RECT(r) NSLog(@"(%.1fx%.1f)-(%.1fx%.1f)", \
             r.origin.x, r.origin.y, r.size.width, r.size.height)
 #else
 #  define SQLOG(...) ;
