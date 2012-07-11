@@ -34,6 +34,41 @@
     t_btnAlert2.tag = 2;
     [t_btnAlert2 addTarget:self action:@selector(btnPressed:) forControlEvents:UIControlEventTouchUpInside];
     [self.window addSubview:t_btnAlert2];
+    
+    UIButton *t_btnPrompt1 = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+    t_btnPrompt1.frame = CGRectMake(50.0f, 100.0f, 100.0f, 29.0f);
+    [t_btnPrompt1 setTitle:@"custom prompt" forState:UIControlStateNormal];
+    t_btnPrompt1.tag = 3;
+    [t_btnPrompt1 addTarget:self action:@selector(btnPressed:) forControlEvents:UIControlEventTouchUpInside];
+    [self.window addSubview:t_btnPrompt1];
+    
+    UIButton *t_btnPrompt2 = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+    t_btnPrompt2.frame = CGRectMake(self.window.frame.size.width - 100.0f - 50.0f, 100.0f, 100.0f, 29.0f);
+    [t_btnPrompt2 setTitle:@"info prompt" forState:UIControlStateNormal];
+    t_btnPrompt2.tag = 4;
+    [t_btnPrompt2 addTarget:self action:@selector(btnPressed:) forControlEvents:UIControlEventTouchUpInside];
+    [self.window addSubview:t_btnPrompt2];
+    
+    UIButton *t_btnPromptControl1 = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+    t_btnPromptControl1.frame = CGRectMake(50.0f, 150.0f, 100.0f, 29.0f);
+    [t_btnPromptControl1 setTitle:@"add dim" forState:UIControlStateNormal];
+    t_btnPromptControl1.tag = 5;
+    [t_btnPromptControl1 addTarget:self action:@selector(btnPressed:) forControlEvents:UIControlEventTouchUpInside];
+    [self.window addSubview:t_btnPromptControl1];
+    
+    UIButton *t_btnPromptControl2 = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+    t_btnPromptControl2.frame = CGRectMake(self.window.frame.size.width - 100.0f - 50.0f, 150.0f, 100.0f, 29.0f);
+    [t_btnPromptControl2 setTitle:@"userinteraction OFF" forState:UIControlStateNormal];
+    t_btnPromptControl2.tag = 6;
+    [t_btnPromptControl2 addTarget:self action:@selector(btnPressed:) forControlEvents:UIControlEventTouchUpInside];
+    [self.window addSubview:t_btnPromptControl2];
+    
+    UIButton *t_btnPostStatusBar = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+    t_btnPostStatusBar.frame = CGRectMake(50.0f, 200.0f, 100.0f, 29.0f);
+    [t_btnPostStatusBar setTitle:@"PostStatusBar" forState:UIControlStateNormal];
+    t_btnPostStatusBar.tag = 7;
+    [t_btnPostStatusBar addTarget:self action:@selector(btnPressed:) forControlEvents:UIControlEventTouchUpInside];
+    [self.window addSubview:t_btnPostStatusBar];
 }
 
 #pragma mark - actions
@@ -45,6 +80,23 @@
         [[SQAlertView defaultAlert] alert:@"info" message:@"this is a info alert"];
     } else if (t_btn.tag == 2) {
         [[SQAlertView defaultAlert] alert:@"info" message:@"this is a comfirm alert, ok?" delegate:self action:@selector(alertView:clickedButtonAtIndex:)];
+    } else if (t_btn.tag == 3) {
+        [[SQAlertView defaultAlert] promptMessage:@"Custom info" atDuration:2.0f atMode:MBProgressHUDModeCustomView];
+        [[SQAlertView defaultAlert] setUserInteraction:YES];
+    } else if (t_btn.tag == 4) {
+        [[SQAlertView defaultAlert] promptMessage:@"Custom info" atDuration:20.0f atMode:MBProgressHUDModeIndeterminate];
+        [[SQAlertView defaultAlert] setUserInteraction:YES];
+    } else if (t_btn.tag == 5) {
+        [[SQAlertView defaultAlert] promptMessage:@"Custom info" atDuration:2.0f atMode:MBProgressHUDModeCustomView];
+        [[SQAlertView defaultAlert] setDimBackground:YES];
+        [[SQAlertView defaultAlert] setUserInteraction:YES];
+    } else if (t_btn.tag == 6) {
+        [[SQAlertView defaultAlert] setUserInteraction:NO];
+    } else if (t_btn.tag == 7) {
+        [[SQAlertView defaultAlert] postStatusBarMessage:@"hi, status bar!" 
+                                                  atType:MTMessageTypeFinish 
+                                              atDuration:2.0f 
+                                                animated:YES];
     }
 }
 

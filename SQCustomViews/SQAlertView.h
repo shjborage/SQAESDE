@@ -8,10 +8,12 @@
 
 #import <UIKit/UIKit.h>
 #import "MBProgressHUD.h"
+#import "MTStatusBarOverlay.h"
 
 @interface SQAlertView : UIViewController
 <
-MBProgressHUDDelegate
+MBProgressHUDDelegate,
+MTStatusBarOverlayDelegate
 >
 {
     id _delegate;
@@ -41,5 +43,10 @@ MBProgressHUDDelegate
 - (void)stopPromptMessage;
 - (void)setDimBackground:(BOOL)bDim;
 - (void)setUserInteraction:(BOOL)bEnable;
+
+- (void)postStatusBarMessage:(NSString *)strMsg 
+                      atType:(MTMessageType)type 
+                  atDuration:(NSTimeInterval)dDuration
+                    animated:(BOOL)bAnimated;
 
 @end

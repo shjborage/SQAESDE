@@ -169,4 +169,54 @@ static SQAlertView *g_Instance = nil;
     _windowPrompt.userInteractionEnabled = NO;
 }
 
+#pragma mark - MTStatusBar message
+
+- (void)postStatusBarMessage:(NSString *)strMsg 
+                      atType:(MTMessageType)type 
+                  atDuration:(NSTimeInterval)dDuration
+                    animated:(BOOL)bAnimated
+{
+    if ([UIApplication sharedApplication].statusBarHidden)
+        return;
+    
+    MTStatusBarOverlay *statusOverlay = [MTStatusBarOverlay sharedInstance];
+    statusOverlay.animation = MTStatusBarOverlayAnimationShrink;
+    statusOverlay.historyEnabled = YES;
+    statusOverlay.delegate = self;
+    
+    switch (type) {
+        case MTMessageTypeActivity:				// shows actvity indicator
+            [statusOverlay postMessage:strMsg duration:dDuration animated:bAnimated];
+            break;
+        case MTMessageTypeFinish:				// shows checkmark
+            [statusOverlay postFinishMessage:strMsg duration:dDuration animated:bAnimated];
+            break;
+        case MTMessageTypeError:
+            [statusOverlay postErrorMessage:strMsg duration:dDuration animated:bAnimated];
+            break;
+            
+        default:
+            break;
+    }
+}
+
+#pragma mark -
+#pragma mark MTStatusBarOverlay Delegate Methods
+
+- (void)statusBarOverlayDidHide
+{
+    SQLOG(@"Overlay did hide");
+}
+
+- (void)statusBarOverlayDidSwitchFromOldMessage:(NSString *)oldMessage toNewMessage:(NSString *)newMessage 
+{
+    SQLOG(@"Overlay switched from '%@' to '%@'", oldMessage, newMessage);
+}
+
+- (void)statusBarOverlayDidClearMessageQueue:(NSArray *)messageQueue 
+{
+    SQLOG(@"Overlay cleared messages from queue: %@", messageQueue);
+}
+
+
 @end

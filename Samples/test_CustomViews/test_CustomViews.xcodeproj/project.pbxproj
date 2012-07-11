@@ -297,6 +297,7 @@
 				A0910E0D15AC25E1002D6835 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
