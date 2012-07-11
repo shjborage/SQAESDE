@@ -27,3 +27,9 @@ Later version:
 1.How to build SQLibs maybe complex, I will try to write a shell script to simplify it.
 2.The include directory "SQLibs_include" is now Empty, Later I will try to write
 a simply app on the mac to move them from src path.
+
+To be added to SQLibs
+1.SQBaseSQLite
+2.SQShareWeibo+(support weibo, qweibo, twitter, facebook)
+3.SQBaseNetwork
+4.SQDownloader

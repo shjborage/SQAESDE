@@ -69,6 +69,27 @@
     t_btnPostStatusBar.tag = 7;
     [t_btnPostStatusBar addTarget:self action:@selector(btnPressed:) forControlEvents:UIControlEventTouchUpInside];
     [self.window addSubview:t_btnPostStatusBar];
+    
+    UIButton *t_btnAddMask = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+    t_btnAddMask.frame = CGRectMake(self.window.frame.size.width - 100.0f - 50.0f, 200.0f, 100.0f, 29.0f);
+    [t_btnAddMask setTitle:@"AddMask" forState:UIControlStateNormal];
+    t_btnAddMask.tag = 8;
+    [t_btnAddMask addTarget:self action:@selector(btnPressed:) forControlEvents:UIControlEventTouchUpInside];
+    [self.window addSubview:t_btnAddMask];
+    
+    UIButton *t_btnLoading1 = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+    t_btnLoading1.frame = CGRectMake(50.0f, 250.0f, 100.0f, 29.0f);
+    [t_btnLoading1 setTitle:@"Loading Standard" forState:UIControlStateNormal];
+    t_btnLoading1.tag = 9;
+    [t_btnLoading1 addTarget:self action:@selector(btnPressed:) forControlEvents:UIControlEventTouchUpInside];
+    [self.window addSubview:t_btnLoading1];
+    
+    UIButton *t_btnLoading2 = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+    t_btnLoading2.frame = CGRectMake(self.window.frame.size.width - 100.0f - 50.0f, 250.0f, 100.0f, 29.0f);
+    [t_btnLoading2 setTitle:@"Loading Custom" forState:UIControlStateNormal];
+    t_btnLoading2.tag = 10;
+    [t_btnLoading2 addTarget:self action:@selector(btnPressed:) forControlEvents:UIControlEventTouchUpInside];
+    [self.window addSubview:t_btnLoading2];
 }
 
 #pragma mark - actions
@@ -97,6 +118,22 @@
                                                   atType:MTMessageTypeFinish 
                                               atDuration:2.0f 
                                                 animated:YES];
+    } else if (t_btn.tag == 8) {
+        SQMaskView *_sqFullScreenMask = [[SQMaskView alloc] initWithType:MT_FULLSCREEN];
+        _sqFullScreenMask.view.alpha = 0.0f;
+        
+        if (_sqFullScreenMask.view.superview == nil)
+            [self.window addSubview:_sqFullScreenMask.view];
+        
+        [UIView animateWithDuration:0.3f animations:^{
+            _sqFullScreenMask.view.alpha = 0.5f;
+        }];
+        [_sqFullScreenMask release];
+    } else if (t_btn.tag == 9) {
+        [[SQLoadingViewController defaultLoadingView] startAnimating];
+    } else {
+        [[SQLoadingViewController defaultLoadingView] setStyle:LS_Custom];
+        [[SQLoadingViewController defaultLoadingView] startAnimating];
     }
 }
 

@@ -18,6 +18,7 @@
 		A0910E1B15AC3525002D6835 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0910E1915AC3525002D6835 /* AudioToolbox.framework */; };
 		A0910E1C15AC3525002D6835 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0910E1A15AC3525002D6835 /* AVFoundation.framework */; };
 		A0910E1E15AC352E002D6835 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0910E1D15AC352E002D6835 /* QuartzCore.framework */; };
+		A09A24DB15AD2EFC0047C5D1 /* loading.png in Resources */ = {isa = PBXBuildFile; fileRef = A09A24DA15AD2EFC0047C5D1 /* loading.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		A0910E1915AC3525002D6835 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		A0910E1A15AC3525002D6835 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		A0910E1D15AC352E002D6835 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		A09A24DA15AD2EFC0047C5D1 /* loading.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = loading.png; path = test_CustomViews/Resources/loading.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +114,7 @@
 		A0910E1815AC3387002D6835 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				A09A24DA15AD2EFC0047C5D1 /* loading.png */,
 				A0910E1615AC3381002D6835 /* Localizable.strings */,
 			);
 			name = Resources;
@@ -170,6 +173,7 @@
 			files = (
 				A0910E0215AC25E1002D6835 /* InfoPlist.strings in Resources */,
 				A0910E1715AC3381002D6835 /* Localizable.strings in Resources */,
+				A09A24DB15AD2EFC0047C5D1 /* loading.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
