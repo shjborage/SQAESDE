@@ -192,10 +192,10 @@
 			children = (
 				A0D05CC315A6F13D00A2491E /* SQGridCell.h */,
 				A0D05CC415A6F13D00A2491E /* SQGridCell.m */,
-				A0D05CC515A6F13D00A2491E /* SQGridScrollView.h */,
-				A0D05CC615A6F13D00A2491E /* SQGridScrollView.m */,
 				A0D05CC715A6F13D00A2491E /* SQGridView.h */,
 				A0D05CC815A6F13D00A2491E /* SQGridView.m */,
+				A0D05CC515A6F13D00A2491E /* SQGridScrollView.h */,
+				A0D05CC615A6F13D00A2491E /* SQGridScrollView.m */,
 			);
 			name = SQGridView;
 			path = ../../SQGridView;
