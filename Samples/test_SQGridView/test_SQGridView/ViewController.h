@@ -7,7 +7,22 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "SQLibs.h"
 
 @interface ViewController : UIViewController
+<
+SQGridScrollViewDelegate,
+SQGridViewDataSource,
+SQGridViewDelegate
+>
+{
+    SQGridScrollView *_vSQGrid;
+    
+    NSMutableArray *_arTest;
+}
+
+@property (nonatomic, retain) SQGridScrollView *vSQGrid;
+
+@property (nonatomic, retain) NSMutableArray *arTest;
 
 @end

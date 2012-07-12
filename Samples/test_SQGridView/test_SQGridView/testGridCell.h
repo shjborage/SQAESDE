@@ -9,5 +9,12 @@
 #import "SQGridCell.h"
 
 @interface testGridCell : SQGridCell
+{
+    UILabel *_lbTitle;
+}
+
+@property (nonatomic, retain) UILabel *lbTitle;
+
+- (void)setCellView:(id)data;
 
 @end

@@ -16,23 +16,45 @@
 		A0362E9815AD890100F6F494 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0362E9715AD890100F6F494 /* ViewController.m */; };
 		A0362E9B15AD890100F6F494 /* ViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = A0362E9915AD890100F6F494 /* ViewController_iPhone.xib */; };
 		A0362E9E15AD890100F6F494 /* ViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = A0362E9C15AD890100F6F494 /* ViewController_iPad.xib */; };
+		A0362EB515AD8AA200F6F494 /* libSQLibs.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A0362EB215AD895C00F6F494 /* libSQLibs.a */; };
+		A0AE1E1C15AEAB3400CA9679 /* testGridCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A0AE1E1B15AEAB3300CA9679 /* testGridCell.m */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A0362EB115AD895C00F6F494 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A0362EAD15AD895B00F6F494 /* SQLibs.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = A0D05CA415A6F06800A2491E;
+			remoteInfo = SQLibs;
+		};
+		A0362EB315AD8A9D00F6F494 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A0362EAD15AD895B00F6F494 /* SQLibs.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = A0D05CA315A6F06800A2491E;
+			remoteInfo = SQLibs;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		A0362E8015AD890100F6F494 /* test_SQGridView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = test_SQGridView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0362E8415AD890100F6F494 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		A0362E8615AD890100F6F494 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		A0362E8815AD890100F6F494 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		A0362E8C15AD890100F6F494 /* test_SQGridView-Info.plist */ = {isa = PBXFileReference; path = "test_SQGridView-Info.plist"; sourceTree = "<group>"; };
+		A0362E8C15AD890100F6F494 /* test_SQGridView-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "test_SQGridView-Info.plist"; sourceTree = "<group>"; };
 		A0362E8E15AD890100F6F494 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		A0362E9015AD890100F6F494 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		A0362E9215AD890100F6F494 /* test_SQGridView-Prefix.pch */ = {isa = PBXFileReference; path = "test_SQGridView-Prefix.pch"; sourceTree = "<group>"; };
-		A0362E9315AD890100F6F494 /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
+		A0362E9215AD890100F6F494 /* test_SQGridView-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "test_SQGridView-Prefix.pch"; sourceTree = "<group>"; };
+		A0362E9315AD890100F6F494 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		A0362E9415AD890100F6F494 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		A0362E9615AD890100F6F494 /* ViewController.h */ = {isa = PBXFileReference; path = ViewController.h; sourceTree = "<group>"; };
+		A0362E9615AD890100F6F494 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		A0362E9715AD890100F6F494 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		A0362E9A15AD890100F6F494 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController_iPhone.xib; sourceTree = "<group>"; };
 		A0362E9D15AD890100F6F494 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController_iPad.xib; sourceTree = "<group>"; };
+		A0362EAD15AD895B00F6F494 /* SQLibs.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SQLibs.xcodeproj; path = ../../SQLibs_StaticLibrary/SQLibs.xcodeproj; sourceTree = "<group>"; };
+		A0AE1E1A15AEAB3300CA9679 /* testGridCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = testGridCell.h; sourceTree = "<group>"; };
+		A0AE1E1B15AEAB3300CA9679 /* testGridCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = testGridCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A0362EB515AD8AA200F6F494 /* libSQLibs.a in Frameworks */,
 				A0362E8515AD890100F6F494 /* UIKit.framework in Frameworks */,
 				A0362E8715AD890100F6F494 /* Foundation.framework in Frameworks */,
 				A0362E8915AD890100F6F494 /* CoreGraphics.framework in Frameworks */,
@@ -69,6 +92,7 @@
 		A0362E8315AD890100F6F494 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A0362EAD15AD895B00F6F494 /* SQLibs.xcodeproj */,
 				A0362E8415AD890100F6F494 /* UIKit.framework */,
 				A0362E8615AD890100F6F494 /* Foundation.framework */,
 				A0362E8815AD890100F6F494 /* CoreGraphics.framework */,
@@ -81,6 +105,8 @@
 			children = (
 				A0362E9315AD890100F6F494 /* AppDelegate.h */,
 				A0362E9415AD890100F6F494 /* AppDelegate.m */,
+				A0AE1E1A15AEAB3300CA9679 /* testGridCell.h */,
+				A0AE1E1B15AEAB3300CA9679 /* testGridCell.m */,
 				A0362E9615AD890100F6F494 /* ViewController.h */,
 				A0362E9715AD890100F6F494 /* ViewController.m */,
 				A0362E9915AD890100F6F494 /* ViewController_iPhone.xib */,
@@ -101,6 +127,14 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		A0362EAE15AD895B00F6F494 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A0362EB215AD895C00F6F494 /* libSQLibs.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -115,6 +149,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				A0362EB415AD8A9D00F6F494 /* PBXTargetDependency */,
 			);
 			name = test_SQGridView;
 			productName = test_SQGridView;
@@ -140,12 +175,28 @@
 			mainGroup = A0362E7515AD890100F6F494;
 			productRefGroup = A0362E8115AD890100F6F494 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = A0362EAE15AD895B00F6F494 /* Products */;
+					ProjectRef = A0362EAD15AD895B00F6F494 /* SQLibs.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				A0362E7F15AD890100F6F494 /* test_SQGridView */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		A0362EB215AD895C00F6F494 /* libSQLibs.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libSQLibs.a;
+			remoteRef = A0362EB115AD895C00F6F494 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		A0362E7E15AD890100F6F494 /* Resources */ = {
@@ -168,10 +219,19 @@
 				A0362E9115AD890100F6F494 /* main.m in Sources */,
 				A0362E9515AD890100F6F494 /* AppDelegate.m in Sources */,
 				A0362E9815AD890100F6F494 /* ViewController.m in Sources */,
+				A0AE1E1C15AEAB3400CA9679 /* testGridCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A0362EB415AD8A9D00F6F494 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SQLibs;
+			targetProxy = A0362EB315AD8A9D00F6F494 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		A0362E8D15AD890100F6F494 /* InfoPlist.strings */ = {
@@ -251,6 +311,7 @@
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "test_SQGridView/test_SQGridView-Prefix.pch";
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/../../**";
 				INFOPLIST_FILE = "test_SQGridView/test_SQGridView-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
@@ -262,6 +323,7 @@
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "test_SQGridView/test_SQGridView-Prefix.pch";
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/../../**";
 				INFOPLIST_FILE = "test_SQGridView/test_SQGridView-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
@@ -287,6 +349,7 @@
 				A0362EA315AD890100F6F494 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

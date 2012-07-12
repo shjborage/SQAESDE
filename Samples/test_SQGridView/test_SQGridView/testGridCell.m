@@ -10,11 +10,22 @@
 
 @implementation testGridCell
 
+@synthesize lbTitle = _lbTitle;
+
+- (void)dealloc
+{
+    [_lbTitle release];
+    
+    [super dealloc];
+}
+
 - (id)initWithFrame:(CGRect)frame
 {
     self = [super initWithFrame:frame];
     if (self) {
         // Initialization code
+        [self initTitleLabel];
+        self.backgroundColor = [UIColor darkGrayColor];
     }
     return self;
 }
@@ -27,5 +38,22 @@
     // Drawing code
 }
 */
+
+- (void)initTitleLabel
+{
+    if (_lbTitle == nil)
+        _lbTitle = [[UILabel alloc] initWithFrame:self.frame];
+    
+    _lbTitle.textAlignment = UITextAlignmentCenter;
+    _lbTitle.backgroundColor = [UIColor clearColor];
+    
+    if (_lbTitle.superview == nil)
+        [self addSubview:_lbTitle];
+}
+
+- (void)setCellView:(id)data
+{
+    _lbTitle.text = [NSString stringWithFormat:@"%d", [(NSNumber *)data intValue]];
+}
 
 @end
