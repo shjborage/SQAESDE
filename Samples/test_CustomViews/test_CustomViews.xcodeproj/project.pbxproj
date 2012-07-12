@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A0362E7415AD858F00F6F494 /* libSQLibs.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A0362E6C15AD7F6C00F6F494 /* libSQLibs.a */; };
 		A0910DF815AC25E1002D6835 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0910DF715AC25E1002D6835 /* UIKit.framework */; };
 		A0910DFA15AC25E1002D6835 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0910DF915AC25E1002D6835 /* Foundation.framework */; };
 		A0910DFC15AC25E1002D6835 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0910DFB15AC25E1002D6835 /* CoreGraphics.framework */; };
@@ -19,27 +18,10 @@
 		A0910E1C15AC3525002D6835 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0910E1A15AC3525002D6835 /* AVFoundation.framework */; };
 		A0910E1E15AC352E002D6835 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0910E1D15AC352E002D6835 /* QuartzCore.framework */; };
 		A09A24DB15AD2EFC0047C5D1 /* loading.png in Resources */ = {isa = PBXBuildFile; fileRef = A09A24DA15AD2EFC0047C5D1 /* loading.png */; };
+		A0AE1E1915AE9F3700CA9679 /* libSQLibs.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A0AE1E1815AE9F3700CA9679 /* libSQLibs.a */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		A0362E6B15AD7F6C00F6F494 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = A0362E6715AD7F6B00F6F494 /* SQLibs.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = A0D05CA415A6F06800A2491E;
-			remoteInfo = SQLibs;
-		};
-		A0362E6D15AD7F7800F6F494 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = A0362E6715AD7F6B00F6F494 /* SQLibs.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = A0D05CA315A6F06800A2491E;
-			remoteInfo = SQLibs;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
-		A0362E6715AD7F6B00F6F494 /* SQLibs.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SQLibs.xcodeproj; path = ../../SQLibs_StaticLibrary/SQLibs.xcodeproj; sourceTree = "<group>"; };
 		A0910DF315AC25E1002D6835 /* test_CustomViews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = test_CustomViews.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0910DF715AC25E1002D6835 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		A0910DF915AC25E1002D6835 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -55,6 +37,7 @@
 		A0910E1A15AC3525002D6835 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		A0910E1D15AC352E002D6835 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		A09A24DA15AD2EFC0047C5D1 /* loading.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = loading.png; path = test_CustomViews/Resources/loading.png; sourceTree = "<group>"; };
+		A0AE1E1815AE9F3700CA9679 /* libSQLibs.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libSQLibs.a; path = "/Users/shjborage/Library/Developer/Xcode/DerivedData/SQLibs_Samples-cbqzimqmpzuyupfrfllyspqbtyja/Build/Products/Debug-iphoneos/libSQLibs.a"; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,7 +45,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A0362E7415AD858F00F6F494 /* libSQLibs.a in Frameworks */,
+				A0AE1E1915AE9F3700CA9679 /* libSQLibs.a in Frameworks */,
 				A0910E1E15AC352E002D6835 /* QuartzCore.framework in Frameworks */,
 				A0910E1B15AC3525002D6835 /* AudioToolbox.framework in Frameworks */,
 				A0910E1C15AC3525002D6835 /* AVFoundation.framework in Frameworks */,
@@ -75,14 +58,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		A0362E6815AD7F6B00F6F494 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				A0362E6C15AD7F6C00F6F494 /* libSQLibs.a */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		A0910DE815AC25E1002D6835 = {
 			isa = PBXGroup;
 			children = (
@@ -104,7 +79,7 @@
 		A0910DF615AC25E1002D6835 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				A0362E6715AD7F6B00F6F494 /* SQLibs.xcodeproj */,
+				A0AE1E1815AE9F3700CA9679 /* libSQLibs.a */,
 				A0910E1D15AC352E002D6835 /* QuartzCore.framework */,
 				A0910E1915AC3525002D6835 /* AudioToolbox.framework */,
 				A0910E1A15AC3525002D6835 /* AVFoundation.framework */,
@@ -159,7 +134,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				A0362E6E15AD7F7800F6F494 /* PBXTargetDependency */,
 			);
 			name = test_CustomViews;
 			productName = test_CustomViews;
@@ -185,28 +159,12 @@
 			mainGroup = A0910DE815AC25E1002D6835;
 			productRefGroup = A0910DF415AC25E1002D6835 /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = A0362E6815AD7F6B00F6F494 /* Products */;
-					ProjectRef = A0362E6715AD7F6B00F6F494 /* SQLibs.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				A0910DF215AC25E1002D6835 /* test_CustomViews */,
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXReferenceProxy section */
-		A0362E6C15AD7F6C00F6F494 /* libSQLibs.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = libSQLibs.a;
-			remoteRef = A0362E6B15AD7F6C00F6F494 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		A0910DF115AC25E1002D6835 /* Resources */ = {
@@ -232,14 +190,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		A0362E6E15AD7F7800F6F494 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = SQLibs;
-			targetProxy = A0362E6D15AD7F7800F6F494 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		A0910E0015AC25E1002D6835 /* InfoPlist.strings */ = {
@@ -305,7 +255,10 @@
 				GCC_PREFIX_HEADER = "test_CustomViews/test_CustomViews-Prefix.pch";
 				HEADER_SEARCH_PATHS = "$(SRCROOT)/../../**";
 				INFOPLIST_FILE = "test_CustomViews/test_CustomViews-Info.plist";
-				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"/Users/shjborage/Library/Developer/Xcode/DerivedData/SQLibs_Samples-cbqzimqmpzuyupfrfllyspqbtyja/Build/Products/Debug-iphoneos\"",
+				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
@@ -319,7 +272,10 @@
 				GCC_PREFIX_HEADER = "test_CustomViews/test_CustomViews-Prefix.pch";
 				HEADER_SEARCH_PATHS = "$(SRCROOT)/../../**";
 				INFOPLIST_FILE = "test_CustomViews/test_CustomViews-Info.plist";
-				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"/Users/shjborage/Library/Developer/Xcode/DerivedData/SQLibs_Samples-cbqzimqmpzuyupfrfllyspqbtyja/Build/Products/Debug-iphoneos\"",
+				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
