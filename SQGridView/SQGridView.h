@@ -57,7 +57,9 @@ typedef enum _GridScrollViewStyle{
 @end
 
 @interface SQGridView : UIView 
-<SQCellDelegate>
+<
+SQCellDelegate
+>
 {
     NSMutableArray *m_allBookCells;
     UIImageView *_ivBackGroundView;

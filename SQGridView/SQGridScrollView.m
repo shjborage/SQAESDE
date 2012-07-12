@@ -72,7 +72,6 @@
 @synthesize sdelegate = _sdelegate;
 @synthesize sdataSource = _sdataSource;
 @synthesize style = _style;
-@synthesize shopContentOffset = _shopContentOffset;
 
 - (void)dealloc
 {
@@ -106,7 +105,7 @@
     
     self.contentSize = [self contentSizeAdapter];
     
-    if (self.pagingEnabled) {
+/*    if (self.pagingEnabled) {
         CGPoint offSetNew = _shopContentOffset;
         if (self.frame.size.width == 768.0f) {
             offSetNew.x = _shopContentOffset.x / 1024.0f * 768.0f;
@@ -115,9 +114,10 @@
         }
         [self setContentOffset:offSetNew];
     }
+ */
     
     if (nil == _visiblePage) {        
-        _visiblePage = [[SQGridView alloc] initWithFrame:CGRectMake(0, 0, self.frame.size.width,self.frame.size.height)];//self.contentSize.width, self.contentSize.height)];
+        _visiblePage = [[SQGridView alloc] initWithFrame:CGRectMake(0, 0, self.frame.size.width,self.frame.size.height)];
         _visiblePage.dataSource = _sdataSource;
         _visiblePage.delegate = _sdelegate;
         _visiblePage.style = _style;

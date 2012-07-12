@@ -103,6 +103,8 @@
             else
                 cell.index = nPos;
         }
+        
+        cell.tag = nPos;
     }
     
     [self clearView];
@@ -152,7 +154,7 @@
     if (uIndex >= [m_allBookCells count])
         return;
     
-    SQGridCell *cell = [[m_allBookCells objectAtIndex:uIndex] retain];
+    SQGridCell *cell = [m_allBookCells objectAtIndex:uIndex];
     if (cell.superview)
         [cell removeFromSuperview];
     [m_allBookCells removeObjectAtIndex:uIndex];

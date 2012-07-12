@@ -15,12 +15,12 @@
 @end
 
 @interface SQGridScrollView : UIScrollView
-<UIScrollViewDelegate>
+<
+UIScrollViewDelegate
+>
 {
     SQGridView *_visiblePage;
     GridScrollViewStyle _style;
-    
-    CGPoint _shopContentOffset; // just for iMagazine shop view.
 
     id<SQGridScrollViewDelegate> _scrollViewDelegate;
     id<SQGridViewDelegate> _sdelegate;
@@ -34,8 +34,6 @@
 
 //default is GRIDSCROLL_VERTICAL_STYLE
 @property (nonatomic, assign) GridScrollViewStyle style;
-
-@property (nonatomic, assign) CGPoint shopContentOffset;
 
 - (void)removeCellsArray:(NSUInteger)uIndex;
 
