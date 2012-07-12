@@ -10,6 +10,8 @@
 		A0910D2415ABD239002D6835 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0910D2315ABD239002D6835 /* QuartzCore.framework */; };
 		A0910D2815ABD240002D6835 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0910D2615ABD240002D6835 /* AudioToolbox.framework */; };
 		A0910D2915ABD240002D6835 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0910D2715ABD240002D6835 /* AVFoundation.framework */; };
+		A09A24C615AD18980047C5D1 /* MTStatusBarOverlay.h in Headers */ = {isa = PBXBuildFile; fileRef = A09A24C415AD18980047C5D1 /* MTStatusBarOverlay.h */; };
+		A09A24C715AD18980047C5D1 /* MTStatusBarOverlay.m in Sources */ = {isa = PBXBuildFile; fileRef = A09A24C515AD18980047C5D1 /* MTStatusBarOverlay.m */; };
 		A0D05CA815A6F06800A2491E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0D05CA715A6F06800A2491E /* Foundation.framework */; };
 		A0D05CD615A6F13D00A2491E /* SQColorUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = A0D05CB515A6F13D00A2491E /* SQColorUtils.h */; };
 		A0D05CD715A6F13D00A2491E /* SQColorUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = A0D05CB615A6F13D00A2491E /* SQColorUtils.m */; };
@@ -46,6 +48,8 @@
 		A0910D2315ABD239002D6835 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		A0910D2615ABD240002D6835 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		A0910D2715ABD240002D6835 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		A09A24C415AD18980047C5D1 /* MTStatusBarOverlay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTStatusBarOverlay.h; sourceTree = "<group>"; };
+		A09A24C515AD18980047C5D1 /* MTStatusBarOverlay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTStatusBarOverlay.m; sourceTree = "<group>"; };
 		A0D05CA415A6F06800A2491E /* libSQLibs.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libSQLibs.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0D05CA715A6F06800A2491E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		A0D05CAB15A6F06800A2491E /* SQLibs-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SQLibs-Prefix.pch"; sourceTree = "<group>"; };
@@ -93,6 +97,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A09A24C315AD18980047C5D1 /* MTStatusBarOverlay */ = {
+			isa = PBXGroup;
+			children = (
+				A09A24C415AD18980047C5D1 /* MTStatusBarOverlay.h */,
+				A09A24C515AD18980047C5D1 /* MTStatusBarOverlay.m */,
+			);
+			path = MTStatusBarOverlay;
+			sourceTree = "<group>";
+		};
 		A0D05C9915A6F06800A2491E = {
 			isa = PBXGroup;
 			children = (
@@ -179,10 +192,10 @@
 			children = (
 				A0D05CC315A6F13D00A2491E /* SQGridCell.h */,
 				A0D05CC415A6F13D00A2491E /* SQGridCell.m */,
-				A0D05CC515A6F13D00A2491E /* SQGridScrollView.h */,
-				A0D05CC615A6F13D00A2491E /* SQGridScrollView.m */,
 				A0D05CC715A6F13D00A2491E /* SQGridView.h */,
 				A0D05CC815A6F13D00A2491E /* SQGridView.m */,
+				A0D05CC515A6F13D00A2491E /* SQGridScrollView.h */,
+				A0D05CC615A6F13D00A2491E /* SQGridScrollView.m */,
 			);
 			name = SQGridView;
 			path = ../../SQGridView;
@@ -213,6 +226,7 @@
 		A0D05CD215A6F13D00A2491E /* ThirdParties */ = {
 			isa = PBXGroup;
 			children = (
+				A09A24C315AD18980047C5D1 /* MTStatusBarOverlay */,
 				A0D05CD315A6F13D00A2491E /* HUD */,
 			);
 			name = ThirdParties;
@@ -250,6 +264,7 @@
 				A0D05CEB15A6F13D00A2491E /* SQBadgeView.h in Headers */,
 				A0D05CED15A6F13D00A2491E /* SQTabBarController.h in Headers */,
 				A0D05CEF15A6F13D00A2491E /* MBProgressHUD.h in Headers */,
+				A09A24C615AD18980047C5D1 /* MTStatusBarOverlay.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -316,6 +331,7 @@
 				A0D05CEC15A6F13D00A2491E /* SQBadgeView.m in Sources */,
 				A0D05CEE15A6F13D00A2491E /* SQTabBarController.m in Sources */,
 				A0D05CF015A6F13D00A2491E /* MBProgressHUD.m in Sources */,
+				A09A24C715AD18980047C5D1 /* MTStatusBarOverlay.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -108,6 +108,7 @@ static SQAlertView *g_Instance = nil;
     _windowPrompt.userInteractionEnabled = YES;
     [_windowPrompt addSubview:HUD];
     
+    // 37x-Checkmark.png is not exist, only the black backgroud.
     HUD.customView = [[[UIImageView alloc] initWithImage:[UIImage imageNamed:@"37x-Checkmark.png"]] autorelease];
     
     // Set custom view mode
@@ -124,7 +125,7 @@ static SQAlertView *g_Instance = nil;
         ;   // call stop manual
 }
 
--(void)stopPromptMessage
+- (void)stopPromptMessage
 {
     if (HUD != nil) {
         [HUD removeFromSuperview];
@@ -135,13 +136,24 @@ static SQAlertView *g_Instance = nil;
     _windowPrompt.userInteractionEnabled = NO;
 }
 
--(void)setDimBackground:(BOOL)bDim
+- (void)setDimBackground:(BOOL)bDim
 {
     if (HUD == nil)
         return;
     
     // 类似Alert，四周画激变的效果
     HUD.dimBackground = bDim;
+}
+
+- (void)setUserInteraction:(BOOL)bEnable
+{
+    if (HUD == nil)
+        return;
+    
+    if (_windowPrompt == nil)
+        return;
+
+    _windowPrompt.userInteractionEnabled = !bEnable;
 }
 
 #pragma mark -
@@ -156,5 +168,55 @@ static SQAlertView *g_Instance = nil;
     
     _windowPrompt.userInteractionEnabled = NO;
 }
+
+#pragma mark - MTStatusBar message
+
+- (void)postStatusBarMessage:(NSString *)strMsg 
+                      atType:(MTMessageType)type 
+                  atDuration:(NSTimeInterval)dDuration
+                    animated:(BOOL)bAnimated
+{
+    if ([UIApplication sharedApplication].statusBarHidden)
+        return;
+    
+    MTStatusBarOverlay *statusOverlay = [MTStatusBarOverlay sharedInstance];
+    statusOverlay.animation = MTStatusBarOverlayAnimationShrink;
+    statusOverlay.historyEnabled = YES;
+    statusOverlay.delegate = self;
+    
+    switch (type) {
+        case MTMessageTypeActivity:				// shows actvity indicator
+            [statusOverlay postMessage:strMsg duration:dDuration animated:bAnimated];
+            break;
+        case MTMessageTypeFinish:				// shows checkmark
+            [statusOverlay postFinishMessage:strMsg duration:dDuration animated:bAnimated];
+            break;
+        case MTMessageTypeError:
+            [statusOverlay postErrorMessage:strMsg duration:dDuration animated:bAnimated];
+            break;
+            
+        default:
+            break;
+    }
+}
+
+#pragma mark -
+#pragma mark MTStatusBarOverlay Delegate Methods
+
+- (void)statusBarOverlayDidHide
+{
+    SQLOG(@"Overlay did hide");
+}
+
+- (void)statusBarOverlayDidSwitchFromOldMessage:(NSString *)oldMessage toNewMessage:(NSString *)newMessage 
+{
+    SQLOG(@"Overlay switched from '%@' to '%@'", oldMessage, newMessage);
+}
+
+- (void)statusBarOverlayDidClearMessageQueue:(NSArray *)messageQueue 
+{
+    SQLOG(@"Overlay cleared messages from queue: %@", messageQueue);
+}
+
 
 @end

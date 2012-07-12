@@ -6,12 +6,22 @@
 //  Copyright (c) 2012 Safe&Quick[http://blog.sina.com.cn/shjborage]. All rights reserved.
 //
 
-// remember to add System Library below:
-// 1.QuartzCore.framework
-// 2.AVFoundation.framework(SQMedia)
-// 3.AudioToolbox.framework(SQMedia)
+/*
+ *  For common usage.
+ *  1.Add head search path for SQLibs.
+ *  2.Add "Other Link Flags" -ObjC
+ *  3.Add Library or library project(dependence).
+ */
 
-// Add "Other Link Flags" -ObjC
+// remember to add System Library below when needed:
+// 1.QuartzCore.framework
+// 2.AVFoundation.framework (SQMedia)
+// 3.AudioToolbox.framework (SQMedia)
+
+// Localizable.strings (SQAlertView)
+// "global_Done"    = "完成";
+// "global_OK"      = "确定";
+// "global_Cancel"  = "取消";
 
 #ifndef _SQLibs_h
 #define _SQLibs_h
