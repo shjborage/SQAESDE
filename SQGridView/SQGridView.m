@@ -103,6 +103,8 @@
             else
                 cell.index = nPos;
         }
+        
+        cell.tag = nPos;
     }
     
     [self clearView];
