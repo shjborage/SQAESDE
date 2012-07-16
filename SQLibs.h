@@ -43,7 +43,4 @@
 // SQMedia
 #import "SQSoundManager.h"
 
-// SQTabBar
-#import "SQTabBarController.h"
-
 #endif

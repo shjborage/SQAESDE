@@ -34,10 +34,6 @@
 		A0D05CE815A6F13D00A2491E /* SQLibs.h in Headers */ = {isa = PBXBuildFile; fileRef = A0D05CC915A6F13D00A2491E /* SQLibs.h */; };
 		A0D05CE915A6F13D00A2491E /* SQSoundManager.h in Headers */ = {isa = PBXBuildFile; fileRef = A0D05CCB15A6F13D00A2491E /* SQSoundManager.h */; };
 		A0D05CEA15A6F13D00A2491E /* SQSoundManager.mm in Sources */ = {isa = PBXBuildFile; fileRef = A0D05CCC15A6F13D00A2491E /* SQSoundManager.mm */; };
-		A0D05CEB15A6F13D00A2491E /* SQBadgeView.h in Headers */ = {isa = PBXBuildFile; fileRef = A0D05CCE15A6F13D00A2491E /* SQBadgeView.h */; };
-		A0D05CEC15A6F13D00A2491E /* SQBadgeView.m in Sources */ = {isa = PBXBuildFile; fileRef = A0D05CCF15A6F13D00A2491E /* SQBadgeView.m */; };
-		A0D05CED15A6F13D00A2491E /* SQTabBarController.h in Headers */ = {isa = PBXBuildFile; fileRef = A0D05CD015A6F13D00A2491E /* SQTabBarController.h */; };
-		A0D05CEE15A6F13D00A2491E /* SQTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0D05CD115A6F13D00A2491E /* SQTabBarController.m */; };
 		A0D05CEF15A6F13D00A2491E /* MBProgressHUD.h in Headers */ = {isa = PBXBuildFile; fileRef = A0D05CD415A6F13D00A2491E /* MBProgressHUD.h */; };
 		A0D05CF015A6F13D00A2491E /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = A0D05CD515A6F13D00A2491E /* MBProgressHUD.m */; };
 /* End PBXBuildFile section */
@@ -74,10 +70,6 @@
 		A0D05CC915A6F13D00A2491E /* SQLibs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SQLibs.h; path = ../../SQLibs.h; sourceTree = "<group>"; };
 		A0D05CCB15A6F13D00A2491E /* SQSoundManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SQSoundManager.h; sourceTree = "<group>"; };
 		A0D05CCC15A6F13D00A2491E /* SQSoundManager.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = SQSoundManager.mm; sourceTree = "<group>"; };
-		A0D05CCE15A6F13D00A2491E /* SQBadgeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SQBadgeView.h; sourceTree = "<group>"; };
-		A0D05CCF15A6F13D00A2491E /* SQBadgeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SQBadgeView.m; sourceTree = "<group>"; };
-		A0D05CD015A6F13D00A2491E /* SQTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SQTabBarController.h; sourceTree = "<group>"; };
-		A0D05CD115A6F13D00A2491E /* SQTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SQTabBarController.m; sourceTree = "<group>"; };
 		A0D05CD415A6F13D00A2491E /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
 		A0D05CD515A6F13D00A2491E /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -144,7 +136,6 @@
 				A0D05CBB15A6F13D00A2491E /* SQCustomViews */,
 				A0D05CC215A6F13D00A2491E /* SQGridView */,
 				A0D05CCA15A6F13D00A2491E /* SQMedia */,
-				A0D05CCD15A6F13D00A2491E /* SQTabBar */,
 				A0D05CD215A6F13D00A2491E /* ThirdParties */,
 				A0D05CAA15A6F06800A2491E /* Supporting Files */,
 			);
@@ -211,18 +202,6 @@
 			path = ../../SQMedia;
 			sourceTree = "<group>";
 		};
-		A0D05CCD15A6F13D00A2491E /* SQTabBar */ = {
-			isa = PBXGroup;
-			children = (
-				A0D05CCE15A6F13D00A2491E /* SQBadgeView.h */,
-				A0D05CCF15A6F13D00A2491E /* SQBadgeView.m */,
-				A0D05CD015A6F13D00A2491E /* SQTabBarController.h */,
-				A0D05CD115A6F13D00A2491E /* SQTabBarController.m */,
-			);
-			name = SQTabBar;
-			path = ../../SQTabBar;
-			sourceTree = "<group>";
-		};
 		A0D05CD215A6F13D00A2491E /* ThirdParties */ = {
 			isa = PBXGroup;
 			children = (
@@ -261,8 +240,6 @@
 				A0D05CE615A6F13D00A2491E /* SQGridView.h in Headers */,
 				A0D05CE815A6F13D00A2491E /* SQLibs.h in Headers */,
 				A0D05CE915A6F13D00A2491E /* SQSoundManager.h in Headers */,
-				A0D05CEB15A6F13D00A2491E /* SQBadgeView.h in Headers */,
-				A0D05CED15A6F13D00A2491E /* SQTabBarController.h in Headers */,
 				A0D05CEF15A6F13D00A2491E /* MBProgressHUD.h in Headers */,
 				A09A24C615AD18980047C5D1 /* MTStatusBarOverlay.h in Headers */,
 			);
@@ -328,8 +305,6 @@
 				A0D05CE515A6F13D00A2491E /* SQGridScrollView.m in Sources */,
 				A0D05CE715A6F13D00A2491E /* SQGridView.m in Sources */,
 				A0D05CEA15A6F13D00A2491E /* SQSoundManager.mm in Sources */,
-				A0D05CEC15A6F13D00A2491E /* SQBadgeView.m in Sources */,
-				A0D05CEE15A6F13D00A2491E /* SQTabBarController.m in Sources */,
 				A0D05CF015A6F13D00A2491E /* MBProgressHUD.m in Sources */,
 				A09A24C715AD18980047C5D1 /* MTStatusBarOverlay.m in Sources */,
 			);
