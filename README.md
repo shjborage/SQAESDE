@@ -1,35 +1,50 @@
-SQLibs
+SQAESDE
 ======
 
-Lots of libs by others or myself.  Just manage it for people easy to use.
+Safe&Quick AES256 Encrypt and Decrypt
 
-1.Copy the directory "SQLibs_include" to your appropriate path and add this path
-to your target's Header Search Paths in Build Settings.
+###Relase Note:
 
-2.Add "libSQLibs.a" to your projects and Check the target's Library Search Paths
- in Build Settings. 
-    You can use the SQLibs_StaticLibrary project to build "libSQLibs.a". Further more,
-    a fat library maybe needed. Use lipo command. (lipo -create libSQLibs_i386.a libSQLibs_arm7.a -output libSQLibs.a)
-    
-3.#import "SQLibs.h", so begin your journey.
+V0.1
+
+1.	Not Support ARC
+2.	Requires iOS 4.0 and later.
 
 
-Samples
--------
-SQLibs_Samples.xcworkspace
+###Brief
 
-An Xcworkspace for all the tests.
+```
++ (NSString *)enCrypt:(NSString *)strContent key:(NSString *)strKey;
++ (NSString *)deCrypt:(NSString *)strContent key:(NSString *)strKey;
 
-1.Each Guide is located in AppDelegate.h's header.
++ (NSString *)enCryptBase64:(NSString *)strContent key:(NSString *)strKey;
++ (NSString *)deCryptBase64:(NSString *)strContent key:(NSString *)strKey;
+```
 
 
-Later version:
-1.How to build SQLibs maybe complex, I will try to write a shell script to simplify it.
-2.The include directory "SQLibs_include" is now Empty, Later I will try to write
-a simply app on the mac to move them from src path.
+###Installing
 
-To be added to SQLibs
-1.SQBaseSQLite
-2.SQShareWeibo+(support weibo, qweibo, twitter, facebook)
-3.SQBaseNetwork
-4.SQDownloader
+####CocoaPods
+CocoaPods automates 3rd party dependencies in Objective-C.
+
+#####Install the ruby gem.
+
+```
+$ sudo gem install cocoapods
+$ pod setup
+```
+
+Depending on your Ruby installation, you may not have to run as sudo to install the cocoapods gem. Create a Podfile. You must be running on iOS 5 or above.
+
+```
+platform :ios, '5.0'
+pod 'SQAESDE', '0.1'
+```
+
+Install dependencies.
+
+```
+$ pod install
+```
+
+When using CocoaPods, you must open the .xcworkspace file instead of the project file when building your project.
