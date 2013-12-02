@@ -8,7 +8,7 @@ Safe&Quick AES256 Encrypt and Decrypt
 V0.1
 
 1.	Not Support ARC
-2.	Requires iOS 4.0 and later.
+2.	Requires iOS 5.0 and later.
 
 
 ###Brief
