@@ -165,12 +165,12 @@
 		47D240C8190918980002EDA5 /* SQAESDE */ = {
 			isa = PBXGroup;
 			children = (
+				47D240CD190918980002EDA5 /* SQAESDE.h */,
+				47D240CE190918980002EDA5 /* SQAESDE.m */,
 				47D240C9190918980002EDA5 /* NSData+SQAES256.h */,
 				47D240CA190918980002EDA5 /* NSData+SQAES256.mm */,
 				47D240CB190918980002EDA5 /* NSData+SQBase64.h */,
 				47D240CC190918980002EDA5 /* NSData+SQBase64.m */,
-				47D240CD190918980002EDA5 /* SQAESDE.h */,
-				47D240CE190918980002EDA5 /* SQAESDE.m */,
 			);
 			name = SQAESDE;
 			path = ../SQAESDE;
@@ -483,6 +483,7 @@
 				47D240C4190917190002EDA5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		47D240C5190917190002EDA5 /* Build configuration list for PBXNativeTarget "DemoTests" */ = {
 			isa = XCConfigurationList;
@@ -491,6 +492,7 @@
 				47D240C7190917190002EDA5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

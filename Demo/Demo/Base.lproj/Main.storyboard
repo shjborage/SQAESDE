@@ -16,16 +16,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PVU-ML-Imb">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="!@A" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PVU-ML-Imb">
                                 <rect key="frame" x="84" y="88" width="217" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <connections>
-                                    <action selector="keyDidChanged:" destination="vXZ-lx-hvc" eventType="valueChanged" id="rby-ae-vlk"/>
+                                    <action selector="keyDidChanged:" destination="vXZ-lx-hvc" eventType="editingChanged" id="Pa7-U6-2Yd"/>
                                 </connections>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Iod-rN-H5q">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="asdf" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Iod-rN-H5q">
                                 <rect key="frame" x="84" y="50" width="217" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -61,6 +61,9 @@
                                 <state key="normal" title="Encrypt">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="encryptDidPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Hmf-gB-9Bk"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RHV-R7-J46">
                                 <rect key="frame" x="110" y="288" width="100" height="30"/>
@@ -68,6 +71,9 @@
                                 <state key="normal" title="Decrypt">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="decryptDidPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="fua-Nz-yIJ"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qKE-r5-6ua">
                                 <rect key="frame" x="84" y="240" width="217" height="30"/>
@@ -96,9 +102,17 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="dekeyTF" destination="qKE-r5-6ua" id="2zF-4Z-bzN"/>
+                        <outlet property="encryptTF" destination="Bkw-V5-whN" id="bkN-6M-Cjf"/>
+                        <outlet property="enkeyTF" destination="PVU-ML-Imb" id="kTf-M6-jar"/>
+                        <outlet property="originTF" destination="Iod-rN-H5q" id="VEn-7c-ZrY"/>
+                        <outlet property="resultTF" destination="zgO-2Z-hYY" id="wky-hh-fYL"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="153" y="56"/>
         </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

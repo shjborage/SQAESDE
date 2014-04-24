@@ -8,6 +8,8 @@
 
 #import "ViewController.h"
 
+#import "SQAESDE.h"
+
 @interface ViewController ()
 
 @property (nonatomic, strong) IBOutlet UITextField *originTF;
@@ -36,17 +38,28 @@
 
 - (IBAction)keyDidChanged:(UITextField *)sender
 {
-  
+  self.dekeyTF.text = sender.text;
 }
 
 - (IBAction)encryptDidPressed:(id)sender
 {
-  
+  self.encryptTF.text = [SQAESDE enCryptBase64:self.originTF.text key:self.enkeyTF.text];
 }
 
 - (IBAction)decryptDidPressed:(id)sender
 {
+  self.resultTF.text = [SQAESDE deCryptBase64:self.encryptTF.text key:self.dekeyTF.text];
+}
+
+- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
+{
+  [super touchesBegan:touches withEvent:event];
   
+  [self.originTF resignFirstResponder];
+  [self.enkeyTF resignFirstResponder];
+  [self.encryptTF resignFirstResponder];
+  [self.dekeyTF resignFirstResponder];
+  [self.resultTF resignFirstResponder];
 }
 
 @end
