@@ -1,9 +1,14 @@
 SQAESDE
 ======
 
-Safe&Quick AES256 Encrypt and Decrypt
+Safe&Quick AES256 Encrypt and Decrypt, which support both hex and base64 output.
 
 ###Relase Note:
+
+V0.1.1
+
+1. ARC support
+2. Add Kiwi unit test and demo project.
 
 V0.1
 
@@ -38,7 +43,7 @@ Depending on your Ruby installation, you may not have to run as sudo to install 
 
 ```
 platform :ios, '5.0'
-pod 'SQAESDE', '0.1'
+pod 'SQAESDE', '~> 0.1.1'
 ```
 
 Install dependencies.
