@@ -1,0 +1,7 @@
+platform :ios, "5.0"
+
+#pod "PodName"
+
+target :DemoTests, :exclusive => true do
+  pod 'Kiwi/XCTest'
+end
