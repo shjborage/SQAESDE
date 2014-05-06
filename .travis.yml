@@ -3,11 +3,12 @@ language: objective-c
 #xcode_project: MyNewProject.xcodeproj # path to your xcodeproj folder
 #xcode_scheme: AutoNSCodingDemoTests
 
-before_install:
-    - pod install
+#before_install:
+#    - pod install
 
 script:
 #  - ./brewv xctool 0.1.7
 #  - brew switch xctool 0.1.7
+    - pod install
     - xctool test -workspace Demo/Demo.xcworkspace -scheme DemoTests -sdk iphonesimulator7.0
   
