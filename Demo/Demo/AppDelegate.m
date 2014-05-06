@@ -13,17 +13,6 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
   // Override point for customization after application launch.
-//  dispatch_apply(10000, dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^(size_t s){
-//    usleep(1000000);
-//    NSLog(@"s : %zu", s);
-//  });
-
-  int i = 0;
-  for (; ;) {
-    usleep(1000000);
-    NSLog(@"%d", ++i);
-  }
-  
   return YES;
 }
 
