@@ -7,8 +7,7 @@ language: objective-c
 #    - pod install
 
 script:
-#  - ./brewv xctool 0.1.7
-#  - brew switch xctool 0.1.7
+    - cd Demo
     - pod install
     - xctool test -workspace Demo/Demo.xcworkspace -scheme DemoTests -sdk iphonesimulator7.0
   
