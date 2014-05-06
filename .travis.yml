@@ -1,0 +1,16 @@
+language: objective-c
+#xcode_workspace: AutoNSCodingDemo/AutoNSCodingDemo.xcworkspace
+#xcode_project: MyNewProject.xcodeproj # path to your xcodeproj folder
+#xcode_scheme: AutoNSCodingDemoTests
+
+script:
+#  - ./brewv xctool 0.1.7
+#  - brew switch xctool 0.1.7
+  - xctool test \
+  -sdk iphonesimulator7.0 \
+  -workspace Demo/Demo.xcworkspace \
+  -scheme DemoTests
+
+#before_install:
+#  - gem install xcpretty
+#script: make ci | xcpretty -c
