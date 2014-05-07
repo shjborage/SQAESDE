@@ -10,5 +10,5 @@ before_install:
 script:
     - cd Demo
     - pod install
-    - xctool clean build test -workspace Demo.xcworkspace -scheme DemoTests -sdk iphonesimulator7.1
+    - xctool clean build run-tests -workspace Demo.xcworkspace -scheme DemoTests -sdk iphonesimulator7.1
   
