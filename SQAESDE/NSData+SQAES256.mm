@@ -13,6 +13,7 @@
 //  appreciated but not required.
 //
 
+#import <CommonCrypto/CommonCryptor.h>
 #import "NSData+SQAES256.h"
 
 @implementation NSData (SQAES256)
